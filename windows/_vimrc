@@ -1,0 +1,35 @@
+set nocompatible
+
+"set autoindent
+"set smartindent
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set number
+set showmatch
+
+set vb t_vb=
+
+"inoremap jj <Esc>
+
+syntax on
+
+set ruler
+set showcmd
+set incsearch
+
+
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8 bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
+if has("win32") || has("win64")
+   set directory=$TMP
+end

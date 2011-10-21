@@ -1,0 +1,12 @@
+set guioptions-=T	  "remove toolbar
+"set guioptions-=m	  "remove menu bar
+set guioptions-=r	  "remove right-hand scroll bar
+
+colorscheme desert
+
+"set guifont=courier_new:h11:b
+"set guifont=consolas:h12
+set guifont=inconsolata:h12
+"set guifont=Droid\ Sans\ Mono:h11
+"set guifont=monofur:h11
+

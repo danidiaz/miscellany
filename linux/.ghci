@@ -1,0 +1,19 @@
+:set -hide-package monads-fd
+:set -hide-package monads-tf
+:module + Control.Applicative
+:module + Control.Monad
+:module + Control.Monad.Identity
+:module + Control.Monad.State
+:module + Control.Monad.Error
+:module + Control.Monad.Reader
+:module + Control.Monad.Writer 
+:module + Control.Monad.Cont
+:module + Control.Monad.Maybe
+:module + Control.Arrow
+:module + Data.List
+:module + Data.Maybe
+
+:module + Yesod
+
+:set prompt "# "
+:set editor vim
