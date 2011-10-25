@@ -12,8 +12,7 @@
 :module + Control.Arrow
 :module + Data.List
 :module + Data.Maybe
-
-:module + Yesod
+:module + Data.Enumerator
 
 :set prompt "# "
 :set editor vim
