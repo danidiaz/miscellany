@@ -12,7 +12,11 @@
 :module + Control.Arrow
 :module + Data.List
 :module + Data.Maybe
-:module + Data.Enumerator
+
+import qualified Data.Enumerator as E
+import qualified Data.Enumerator.Binary as EB
+import qualified Data.Enumerator.Text as ET
+import qualified Data.ByteString as B
 
 :set prompt "# "
 :set editor vim
