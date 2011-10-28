@@ -1,5 +1,9 @@
 :set -hide-package monads-fd
 :set -hide-package monads-tf
+:set -XTemplateHaskell
+
+:module + Language.Haskell.TH
+
 :module + Control.Applicative
 :module + Control.Monad
 :module + Control.Monad.Identity
@@ -10,15 +14,19 @@
 :module + Control.Monad.Cont
 :module + Control.Monad.Maybe
 :module + Control.Arrow
+
+:module + Control.Exception
+:module + Control.Exception.Control
+
 :module + Data.List
 :module + Data.Maybe
 
-import qualified Data.ByteString as B
-import qualified Data.Text as T
+:module + Data.ByteString
+:module + Data.Text
 
-import qualified Data.Enumerator as E
-import qualified Data.Enumerator.Binary as EB
-import qualified Data.Enumerator.Text as ET
+:module + Data.Enumerator
+:module + Data.Enumerator.Binary
+:module + Data.Enumerator.Text
 
 :set prompt "# "
 :set editor vim
