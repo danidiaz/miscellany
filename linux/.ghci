@@ -28,6 +28,7 @@ import qualified Data.Text as T
 import qualified Data.Enumerator as E
 import qualified Data.Enumerator.Binary as EB
 import qualified Data.Enumerator.Text as ET
+import qualified Data.Enumerator.List as EL
 
 :set prompt "# "
 :set editor vim
