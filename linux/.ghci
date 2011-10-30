@@ -33,3 +33,5 @@ import qualified Data.Enumerator.List as EL
 
 :set prompt "# "
 :set editor vim
+
+:def hoogle \str -> return $ ":! hoogle --count=9 \"" ++ str ++ "\""
