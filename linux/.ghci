@@ -35,3 +35,4 @@ import qualified Data.Enumerator.List as EL
 :set editor vim
 
 :def hoogle \str -> return $ ":! hoogle --count=9 \"" ++ str ++ "\""
+:def hasktags \_ -> return $ ":! find -name *.hs | xargs hasktags --ctags"
