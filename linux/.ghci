@@ -34,5 +34,8 @@ import qualified Data.Enumerator.List as EL
 :set prompt "# "
 :set editor vim
 
+-- See issue#10 of The Monad.Reader 
+:set stop :list
+
 :def hoogle \str -> return $ ":! hoogle --count=9 \"" ++ str ++ "\""
 :def hasktags \_ -> return $ ":! find -name *.hs | xargs hasktags --ctags"
