@@ -1,0 +1,58 @@
+More at http://rayninfo.co.uk/vimtips.html
+
+z+
+zz
+zm
+'"
+`"
+'.
+`.
+:jumps
+<C-O>
+<C-I>
+diB
+da<
+dat
+:Sex
+:windo w
+/^D
+:h client-server
+:h norm
+:h remote
+:norm fcts
+:norm yi<
+Vit
+:h mksession
+gv
+gi
+:1,10 norm IabcAxyz
+:norm /fooI
+>2at
+:ab
+:h gvimrc
+:h holy-grail
+:/fofo/+1 norm p
+:h scrollbind
+q:
+:h helptags
+:norm di'"0P
+:/\[/d
+:vimgrep
+:cc
+:cn
+:copen
+:cclose
+:lvimgrep
+:llist
+:%g/^s*FOLDER='[^']*'\s*$/d
+:%g.FOLDER.s.FOLDER = '[^']*'..g
+:%g.LAYOUT.normal d1k
+:%d|w!
+:h ino
+:.,/ok/+1y +
+:.,/goal>/-1v.P15.d
+:bd
+:.,/P3/-1d
+:.,.+10>>
+:d/dire/-1
+:ball
