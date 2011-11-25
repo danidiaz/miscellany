@@ -32,6 +32,11 @@ import qualified Data.Enumerator.Binary as EB
 import qualified Data.Enumerator.Text as ET
 import qualified Data.Enumerator.List as EL
 
+import qualified Data.Iteratee as I
+import           Data.Iteratee ((><>),(<><))
+import           Data.Iteratee.Char
+import qualified Data.Iteratee.Char as IC
+
 :set prompt "# "
 :set editor vim
 
