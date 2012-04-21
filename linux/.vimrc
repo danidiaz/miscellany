@@ -15,17 +15,22 @@ set number
 set showmatch
 set hidden
 
-set backupdir=~/.vim-tmp
-set directory=~/.vim-tmp
+set backupdir=/tmp
+set directory=/tmp
 
 set vb t_vb=
 
-"inoremap jj <Esc>
+"inoremap ii <Esc>
+
+" use ghc functionality for haskell files
+au Bufenter *.hs compiler ghc
 
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
+
+let g:haddock_browser = "/usr/bin/chromium"
 
 set ruler
 set showcmd
@@ -35,6 +40,8 @@ set incsearch
 set shortmess=atI
 
 let mapleader = ","
+
+colorscheme zenburn
 
 if has("multi_byte")
   if &termencoding == ""
