@@ -1,0 +1,23 @@
+snippet fun
+	${1:name} ::
+	$1 =
+snippet main
+	main :: IO ()
+	main = do
+snippet module
+	{-# LANGUAGE Rank2Types #-}
+	{-# LANGUAGE ViewPatterns #-}
+	{-# LANGUAGE MultiParamTypeClasses #-}
+	{-# LANGUAGE UndecidableInstances #-}
+
+	module ${1:Module} (
+
+		) where
+
+	import Prelude hiding (catch,(.))
+	import Data.Monoid
+	import Control.Category
+	import Control.Monad
+	import Control.Applicative
+	import Control.Error
+	import qualified Data.Text as T
