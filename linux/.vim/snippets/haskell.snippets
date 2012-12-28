@@ -21,3 +21,6 @@ snippet module
 	import Control.Applicative
 	import Control.Error
 	import qualified Data.Text as T
+snippet instance
+	instance (${1:precond} ${2:var},) => ${3:class} $2
+		${4:function} =
