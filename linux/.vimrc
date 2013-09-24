@@ -4,6 +4,7 @@
 
 set nocompatible
 
+execute pathogen#infect()
 "set autoindent
 "set smartindent
 
@@ -42,6 +43,12 @@ set shortmess=atI
 let mapleader = ","
 
 colorscheme zenburn
+
+let g:unite_prompt = '$'
+noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
+noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
+noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
+noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
 if has("multi_byte")
   if &termencoding == ""
