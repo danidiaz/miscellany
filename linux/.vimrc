@@ -12,6 +12,10 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" shows status bar even with one window. 
+" useful for the vim-airline plugin.
+set laststatus=2 
+                  
 set number
 set showmatch
 set hidden
