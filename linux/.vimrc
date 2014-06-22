@@ -28,7 +28,7 @@ set vb t_vb=
 "inoremap ii <Esc>
 
 " use ghc functionality for haskell files
-au Bufenter *.hs compiler ghc
+" au Bufenter *.hs compiler ghc
 
 syntax on
 filetype on
