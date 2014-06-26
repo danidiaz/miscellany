@@ -32,6 +32,8 @@ set vb t_vb=
 
 " http://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
 au Bufenter *.hs norm zR
+" https://github.com/dag/vim2hs
+let g:haskell_conceal = 0
 
 syntax on
 filetype on
