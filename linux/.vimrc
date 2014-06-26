@@ -29,6 +29,7 @@ set vb t_vb=
 
 " use ghc functionality for haskell files
 " au Bufenter *.hs compiler ghc
+au Bufenter *.hs norm zR
 
 syntax on
 filetype on
