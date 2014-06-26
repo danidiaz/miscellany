@@ -50,6 +50,7 @@ set shortmess=atI
 let mapleader = ","
 
 " colorscheme zenburn
+colorscheme desert
 
 let g:unite_prompt = '$'
 noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
