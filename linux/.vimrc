@@ -29,6 +29,8 @@ set vb t_vb=
 
 " use ghc functionality for haskell files
 " au Bufenter *.hs compiler ghc
+
+" http://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
 au Bufenter *.hs norm zR
 
 syntax on
