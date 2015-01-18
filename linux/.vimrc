@@ -60,6 +60,8 @@ noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
 noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
 noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
+" http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+" http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
 nnoremap <Leader>lcd :lcd %:p:h<CR>:pwd<CR>
 
 if has("multi_byte")
