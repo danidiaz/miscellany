@@ -60,6 +60,8 @@ noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
 noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
 noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
+nnoremap <Leader>lcd :lcd %:p:h<CR>:pwd<CR>
+
 if has("multi_byte")
   if &termencoding == ""
     let &termencoding = &encoding
