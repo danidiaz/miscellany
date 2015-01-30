@@ -64,6 +64,17 @@ noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
 nnoremap <Leader>lcd :lcd %:p:h<CR>:pwd<CR>
 
+noremap <script> <silent> <unique> <Leader>y "*y
+noremap <script> <silent> <unique> <Leader>Y :%y*<CR>
+noremap <script> <silent> <unique> <Leader>p "*p
+noremap <script> <silent> <unique> <Leader>P "*P
+noremap <script> <silent> <unique> <Leader>d "_d
+noremap <script> <silent> <unique> <Leader>D :%d<CR>:w!<CR>
+noremap <script> <silent> <unique> <Leader>e :e!<CR>
+noremap <script> <silent> <unique> <Leader>w :update!<CR>
+noremap <script> <silent> <unique> <Leader>q :q!<CR>
+noremap <script> <silent> <unique> <Leader>x :x!<CR>
+
 if has("multi_byte")
   if &termencoding == ""
     let &termencoding = &encoding
