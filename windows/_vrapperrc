@@ -1,0 +1,8 @@
+set gvimpath=C:\Program Files (x86)\Vim\vim73\gvim.exe
+
+" http://stackoverflow.com/questions/17863730/leader-command-in-vrapper-for-eclipse
+noremap ,d "_d
+noremap ,e :e!<CR>
+noremap ,w :update!<CR>
+noremap ,q :q!<CR>
+noremap ,x :x!<CR>
