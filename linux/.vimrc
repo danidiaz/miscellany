@@ -74,6 +74,7 @@ noremap <script> <silent> <unique> <Leader>e :e!<CR>
 noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
+noremap <script> <silent> <unique> <Leader>n <C-w>
 
 if has("multi_byte")
   if &termencoding == ""
