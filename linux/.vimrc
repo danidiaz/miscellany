@@ -62,7 +62,7 @@ noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
-nnoremap <Leader>lcd :lcd %:p:h<CR>:pwd<CR>
+nnoremap <Leader>l :l %:p:h<CR>:pwd<CR>
 
 noremap <script> <silent> <unique> <Leader>y "*y
 noremap <script> <silent> <unique> <Leader>Y :%y*<CR>
