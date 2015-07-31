@@ -16,7 +16,7 @@ set shiftwidth=4
 " useful for the vim-airline plugin.
 set laststatus=2 
                   
-sel relativenumber
+set relativenumber
 set number
 set showmatch
 set hidden
