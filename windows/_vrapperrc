@@ -6,3 +6,4 @@ noremap ,e :e!<CR>
 noremap ,w :update!<CR>
 noremap ,q :q!<CR>
 noremap ,x :x!<CR>
+noremap ,u `[gU`]
