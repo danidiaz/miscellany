@@ -2,8 +2,8 @@ priority -50
 
 snippet if "if ... then ... else ..."
 if ${1:condition}
-	then ${2:expression}
-	else ${3:expression}
+    then ${2:expression}
+    else ${3:expression}
 endsnippet
 
 snippet lang
@@ -13,10 +13,11 @@ endsnippet
 snippet main
 main :: IO ()
 main = do
+   ${1:command}
 endsnippet
 
 snippet module
 module ${1:module} (
 
-	) where
+    ) where
 endsnippet
