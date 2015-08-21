@@ -1,26 +1,22 @@
-snippet fun
-	${1:name} ::
-	$1 =
+priority -50
+
+snippet if "if ... then ... else ..."
+if ${1:condition}
+	then ${2:expression}
+	else ${3:expression}
+endsnippet
+
+snippet lang
+{-# LANGUAGE ${1:pragma} #-}
+endsnippet
+
 snippet main
-	main :: IO ()
-	main = do
+main :: IO ()
+main = do
+endsnippet
+
 snippet module
-	{-# LANGUAGE Rank2Types #-}
-	{-# LANGUAGE ViewPatterns #-}
-	{-# LANGUAGE MultiParamTypeClasses #-}
-	{-# LANGUAGE UndecidableInstances #-}
+module ${1:module} (
 
-	module ${1:Module} (
-
-		) where
-
-	import Prelude hiding (catch,(.))
-	import Data.Monoid
-	import Control.Category
-	import Control.Monad
-	import Control.Applicative
-	import Control.Error
-	import qualified Data.Text as T
-snippet instance
-	instance (${1:precond} ${2:var},) => ${3:class} $2 where
-		${4:function} =
+	) where
+endsnippet
