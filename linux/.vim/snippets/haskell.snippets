@@ -6,6 +6,12 @@ if ${1:condition}
     else ${3:expression}
 endsnippet
 
+snippet case "case ... of ..."
+case ${1:expression} of
+    ${2:pattern} -> ${3:expression}
+    ${4:pattern} -> ${5:expression}
+endsnippet
+
 snippet lang
 {-# LANGUAGE ${1:pragma} #-}
 endsnippet
