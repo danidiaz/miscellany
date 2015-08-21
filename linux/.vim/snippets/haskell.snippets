@@ -13,7 +13,7 @@ case ${1:expression} of
 endsnippet
 
 snippet def "definition"
-${1:name} :: ${2:Type}
+${1:name} :: ${2:type}
 $1 = $0
 endsnippet
 
@@ -28,7 +28,11 @@ main = do
 endsnippet
 
 snippet module
-module ${1:module} (
+module ${1:name} (
 
     ) where
+endsnippet
+
+snippet qual
+import qualified ${1:module} as {2:abbr}
 endsnippet
