@@ -12,12 +12,18 @@ case ${1:expression} of
     ${4:pattern} -> ${5:expression}
 endsnippet
 
+snippet ha "haddock"
+{-| ${1:comment}
+
+-}
+endsnippet
+
 snippet def "definition"
 ${1:name} :: ${2:type}
 $1 = $0
 endsnippet
 
-snippet def "definition with haddock"
+snippet defh "definition with haddock"
 {-|
  
 -}
