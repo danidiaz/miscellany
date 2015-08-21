@@ -17,6 +17,15 @@ ${1:name} :: ${2:type}
 $1 = $0
 endsnippet
 
+snippet def "definition with haddock"
+{-|
+ 
+-}
+${1:name} :: ${2:type}
+$1 = $0
+endsnippet
+
+
 snippet lang
 {-# LANGUAGE ${1:pragma} #-}
 endsnippet
@@ -31,6 +40,16 @@ snippet module
 module ${1:name} (
 
     ) where
+endsnippet
+
+snippet moduleh
+{-|
+
+${1:longdesc}
+-}
+module ${2:name} (
+
+) where
 endsnippet
 
 snippet qua
