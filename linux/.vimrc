@@ -43,6 +43,14 @@ filetype indent on
 
 let g:haddock_browser = "/usr/bin/chromium"
 
+let g:python_host_prog="/usr/bin/python"
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 set ruler
 set showcmd
 set hlsearch
