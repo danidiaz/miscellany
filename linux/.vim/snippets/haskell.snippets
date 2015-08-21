@@ -12,6 +12,11 @@ case ${1:expression} of
     ${4:pattern} -> ${5:expression}
 endsnippet
 
+snippet def "definition"
+${1:name} :: ${2:Type}
+$1 = $0
+endsnippet
+
 snippet lang
 {-# LANGUAGE ${1:pragma} #-}
 endsnippet
