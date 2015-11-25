@@ -68,8 +68,6 @@ noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
 noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
 noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
 noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
-" noremap <script> <silent> <unique> <Leader>u `[gU`]`]
-noremap <script> <silent> <unique> <Leader>u `[v]~`]
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
@@ -85,7 +83,11 @@ noremap <script> <silent> <unique> <Leader>e :e!<CR>
 noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
-noremap <script> <silent> <unique> <Leader>n <C-w>
+" noremap <script> <silent> <unique> <Leader>u `[gU`]`]
+noremap <script> <silent> <unique> <Leader>u `[v]~`]
+"noremap <script> <silent> <unique> <Leader>n <C-w>
+nnoremap <script> <silent> <C-K> <C-W>
+" other possible remaps: space, <C-J>, <C-H>, [[
 
 if has("multi_byte")
   if &termencoding == ""
