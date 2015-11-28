@@ -89,6 +89,13 @@ noremap <script> <silent> <unique> <Leader>u `[v]~`]
 nnoremap <script> <silent> <unique> <C-K> <C-W>
 " other possible remaps: space, <C-J>, <C-H>, [[
 
+autocmd FileType haskell nnoremap <script> <silent> [f /^\w[^:=]*::<CR>
+autocmd FileType haskell nnoremap <script> <silent> ]f ?^\w[^:=]*::<CR>
+autocmd FileType haskell nnoremap <script> <silent> [l /^\s*\w[^:=]*::<CR>
+autocmd FileType haskell nnoremap <script> <silent> ]l ?^\s*\w[^:=]*::<CR>
+autocmd FileType haskell nnoremap <script> <silent> [t /^\(data \\|newtype \\|type \\|class\)<CR>
+autocmd FileType haskell nnoremap <script> <silent> ]t ?^\(data \\|newtype \\|type \\|class\)<CR>
+
 if has("multi_byte")
   if &termencoding == ""
     let &termencoding = &encoding
