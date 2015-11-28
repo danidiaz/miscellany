@@ -18,7 +18,8 @@ nnoremap <script> <silent> [I G?^import <CR>zb
 nnoremap <script> <silent> [m gg/^module <CR>z<CR>
 " beginning of module exports (wonky)
 nnoremap <script> <silent> [M gg/^\s*)\s*where\s*$<CR>zb<CR>
-" next named chunk of documentation (-- $name)
+" next named chunk of documentation
+" https://www.haskell.org/haddock/doc/html/ch03s05.html
 nnoremap <script> <silent> ]n /^-- \$\w\+<CR>z<CR>
 " previous named chunk of documentation
 nnoremap <script> <silent> [n ?^-- \$\w\+<CR>z<CR>
