@@ -1,11 +1,11 @@
 " next top-level type signature
-nnoremap <script> <silent> ]f /^\w[^:=]*::<CR>
+nnoremap <script> <silent> ]f /^\w[^:=$]*\(::\\|\n\s*::\)<CR>
 " previous top-level type signature
-nnoremap <script> <silent> [f ?^\w[^:=]*::<CR>
+nnoremap <script> <silent> [f ?^\w[^:=$]*::\(::\\|\n\s*::\)<CR>
 " next type signature
-nnoremap <script> <silent> ]l /^\s*\w[^:=]*::<CR>
+nnoremap <script> <silent> ]l /^\s*\w[^:=$]*\(::\\|\n\s*::\)<CR>
 " previous type signature
-nnoremap <script> <silent> [l ?^\s*\w[^:=]*::<CR>
+nnoremap <script> <silent> [l ?^\s*\w[^:=$]*\(::\\|\n\s*::\)<CR>
 " next data declaration
 nnoremap <script> <silent> ]t /^\(data \\|newtype \\|type \\|class\)<CR>
 " previous data declaration
