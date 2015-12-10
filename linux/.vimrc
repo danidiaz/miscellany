@@ -51,6 +51,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+let g:netrw_banner=0
+
 set ruler
 set showcmd
 set hlsearch
