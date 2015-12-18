@@ -26,13 +26,14 @@ set directory=/tmp
 
 set vb t_vb=
 
-"inoremap ii <Esc>
+" http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
+inoremap jk <Esc>
 
 " use ghc functionality for haskell files
 " au Bufenter *.hs compiler ghc
 
 " http://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
-au Bufenter *.hs norm zR
+" au Bufenter *.hs norm zR
 " https://github.com/dag/vim2hs
 let g:haskell_conceal = 0
 
