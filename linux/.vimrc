@@ -90,7 +90,7 @@ noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
 " noremap <script> <silent> <unique> <Leader>u `[gU`]`]
-noremap <script> <silent> <unique> <Leader>u `[v]~`]
+noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 "noremap <script> <silent> <unique> <Leader>n <C-w>
 nnoremap <script> <silent> <unique> <C-K> <C-W>
 " other possible remaps: space, <C-J>, <C-H>, [[
