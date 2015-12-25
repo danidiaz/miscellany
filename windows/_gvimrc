@@ -10,3 +10,6 @@ set guifont=inconsolata:h12
 "set guifont=Droid\ Sans\ Mono:h11
 "set guifont=monofur:h11
 
+" http://stackoverflow.com/questions/1646819/how-can-i-map-ctrl-tab-to-something-in-vim
+map <C-Tab> gt
+map <C-S-Tab> gT
