@@ -92,8 +92,9 @@ noremap <script> <silent> <unique> <Leader>x :x!<CR>
 " noremap <script> <silent> <unique> <Leader>u `[gU`]`]
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 "noremap <script> <silent> <unique> <Leader>n <C-w>
-nnoremap <script> <silent> <unique> <C-K> <C-W>
-" other possible remaps: space, <C-J>, <C-H>, [[
+nnoremap <script> <silent> <unique> <C-J> <C-W>
+" nnoremap <script> <silent> <unique> <C-K> <C-W>
+" other possible remaps: space, <C-K>, <C-H>, [[
 
 if has("multi_byte")
   if &termencoding == ""
