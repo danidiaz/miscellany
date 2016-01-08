@@ -5,7 +5,8 @@
 set nocompatible
 
 execute pathogen#infect()
-"set autoindent
+set autoindent
+filetype plugin indent on
 "set smartindent
 
 set expandtab
