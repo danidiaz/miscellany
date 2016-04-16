@@ -95,7 +95,7 @@ noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 " noremap <script> <silent> <unique> <BS> <C-^>
 " noremap <script> <silent> <unique> <SPACE> :ls<CR>
 
-" other possible remaps: tab, space, backspace, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, much stuff starting with [, perhaps s.
+" other possible remaps: tab, space, backspace, return, ctrl-m, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, much stuff starting with [, perhaps s.
 
 if has("multi_byte")
   if &termencoding == ""
