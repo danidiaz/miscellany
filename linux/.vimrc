@@ -90,12 +90,12 @@ noremap <script> <silent> <unique> <Leader>e :e!<CR>
 noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
-" noremap <script> <silent> <unique> <Leader>u `[gU`]`]
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
-"noremap <script> <silent> <unique> <Leader>n <C-w>
-nnoremap <script> <silent> <unique> <C-J> <C-W>
-" nnoremap <script> <silent> <unique> <C-K> <C-W>
-" other possible remaps: space, <C-K>, <C-H>, [[
+
+" noremap <script> <silent> <unique> <BS> <C-^>
+" noremap <script> <silent> <unique> <SPACE> :ls<CR>
+
+" other possible remaps: tab, space, backspace, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, much stuff starting with [, perhaps s.
 
 if has("multi_byte")
   if &termencoding == ""
