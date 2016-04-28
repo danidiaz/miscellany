@@ -14,7 +14,7 @@ set tabstop=4
 set shiftwidth=4
 
 set foldminlines=0
-set folddoopen-=search
+set foldopen-=search
 
 " shows status bar even with one window. 
 " useful for the vim-airline plugin.
