@@ -86,7 +86,8 @@ noremap <script> <silent> <unique> <Leader>p "*p
 noremap <script> <silent> <unique> <Leader>P "*P
 noremap <script> <silent> <unique> <Leader>d "_d
 noremap <script> <silent> <unique> <Leader>D :%d<CR>:w!<CR>
-noremap <script> <silent> <unique> <Leader>e :e!<CR>
+noremap <script> <silent> <unique> <Leader>r :e!<CR>
+noremap <script> <silent> <unique> <Leader>e :Explore<CR>
 noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
