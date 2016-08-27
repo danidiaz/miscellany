@@ -93,9 +93,9 @@ noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <script> <silent> <unique> <Leader>x :x!<CR>
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 
-noremap <script> <silent> <unique> <BS> <C-^>
-noremap <script> <silent> <unique> <SPACE> :ls<CR>
-noremap <script> <silent> <unique> <TAB> gt
+nnoremap <script> <silent> <unique> <BS> <C-^>
+nnoremap <unique> <SPACE> :ls<cr>:b
+" noremap <script> <silent> <unique> <TAB> gt
 
 " other possible remaps: tab, space, backspace, return, 
 "                        ctrl-m, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, 
