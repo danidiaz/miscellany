@@ -7,7 +7,7 @@ set nocompatible
 execute pathogen#infect()
 set autoindent
 filetype plugin indent on
-"set smartindent
+set smartindent
 
 set expandtab
 set tabstop=4
