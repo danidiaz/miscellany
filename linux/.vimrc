@@ -100,7 +100,11 @@ nnoremap <unique> <SPACE> :ls<cr>:b
 
 " other possible remaps: tab, space, backspace, return, 
 "                        ctrl-m, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, 
-"                        much stuff starting with [, perhaps s.
+"                        much stuff starting with [, perhaps s (when not taken by vim-sneak).
+
+set wildignore+=.*
+set wildignore+=dist/*
+set wildignore+=target/*
 
 if has("multi_byte")
   if &termencoding == ""
