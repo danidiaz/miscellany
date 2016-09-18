@@ -96,6 +96,7 @@ noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 " http://ellengummesson.com/blog/2015/08/01/dropping-ctrlp-and-other-vim-plugins/
 nnoremap <script> <silent> <unique> <BS> <C-^>
 nnoremap <unique> <SPACE> :ls<cr>:b
+" It is a bad idea to remap TAB, which is the same as ctrl-i.
 " noremap <script> <silent> <unique> <TAB> gt
 
 " other possible remaps: tab, space, backspace, return, 
