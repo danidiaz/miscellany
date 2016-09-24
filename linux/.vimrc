@@ -9,6 +9,9 @@ set autoindent
 filetype plugin indent on
 "set smartindent
 
+" http://stackoverflow.com/questions/16631436/how-to-go-to-the-end-of-the-file-in-vim-while-preserving-the-current-column-un    de
+set nostartofline
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
