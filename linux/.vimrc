@@ -19,6 +19,9 @@ set shiftwidth=4
 set foldminlines=0
 set foldopen-=search
 
+" http://superuser.com/questions/271023/vim-can-i-disable-continuation-of-comments-to-the-next-line
+set formatoptions-=cro
+
 " shows status bar even with one window. 
 " useful for the vim-airline plugin.
 set laststatus=2 
