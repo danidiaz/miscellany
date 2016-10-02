@@ -19,7 +19,7 @@ set shiftwidth=4
 set foldminlines=0
 set foldopen-=search
 
-" set cursorline
+set cursorline
 " set cursorcolumn
 
 " http://superuser.com/questions/271023/vim-can-i-disable-continuation-of-comments-to-the-next-line
