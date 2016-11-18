@@ -99,12 +99,14 @@ noremap <script> <silent> <unique> <Leader>e :e!<CR>
 " noremap <script> <silent> <unique> <Leader>e :Explore<CR>
 noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
-noremap <script> <silent> <unique> <Leader>x :x!<CR>
+"noremap <script> <silent> <unique> <Leader>x :x!<CR>
+noremap <unique> <Leader>x :ls<cr>:b<SPACE>
+
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 
 " http://ellengummesson.com/blog/2015/08/01/dropping-ctrlp-and-other-vim-plugins/
 nnoremap <script> <silent> <unique> <BS> <C-^>
-nnoremap <unique> <SPACE> :ls<cr>:b
+" nnoremap <unique> <SPACE> :ls<cr>:b
 " It is a bad idea to remap TAB, which is the same as ctrl-i.
 " noremap <script> <silent> <unique> <TAB> gt
 
