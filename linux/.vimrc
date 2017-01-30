@@ -103,6 +103,7 @@ noremap <script> <silent> <unique> <Leader>q :q!<CR>
 noremap <unique> <Leader>x :ls<cr>:b<SPACE>
 
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
+inoremap <C-l> <Esc>bgUawea
 
 " http://ellengummesson.com/blog/2015/08/01/dropping-ctrlp-and-other-vim-plugins/
 nnoremap <script> <silent> <unique> <BS> <C-^>
