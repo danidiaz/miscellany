@@ -80,11 +80,11 @@ let mapleader = ","
 " colorscheme zenburn
 colorscheme desert
 
-let g:unite_prompt = '$'
-noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
-noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
-noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
-noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
+" let g:unite_prompt = '$'
+" noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
+" noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
+" noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
+" noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
@@ -102,7 +102,7 @@ noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 "noremap <script> <silent> <unique> <Leader>x :x!<CR>
 noremap <unique> <Leader>x :ls<cr>:b<SPACE>
-noremap <unique> <Leader>z :FZF<cr>
+noremap <unique> <Leader>f :FZF<cr>
 
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 inoremap <C-l> <Esc>bgUawea
