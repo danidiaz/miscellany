@@ -1,0 +1,9 @@
+" https://github.com/JetBrains/ideavim
+" https://github.com/Valloric/dotfiles/blob/master/intellij/ideavimrc
+
+set surround
+let mapleader = ","
+map <Leader>r :action RenameElement<CR>
+map <Leader>u `[v`]~`]
+imap <C-l> <Esc>bgUawea
+
