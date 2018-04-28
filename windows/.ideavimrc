@@ -5,6 +5,7 @@ let mapleader = ","
 
 map <Leader>r :action RenameElement<CR>
 map <Leader>s :action FileStructurePopup<CR>
+map <Leader>i :action GotoImplementation<CR>
 
 map <Leader>u `[v`]~`]
 imap <C-l> <Esc>bgUawea
