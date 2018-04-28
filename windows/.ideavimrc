@@ -22,5 +22,7 @@ imap <C-l> <Esc>bgUawea
 " same as default IDEA action, but only in insert mode
 imap <C-v> <Esc>:action $Paste<CR>
 
+map g; :action JumpToLastChange<CR>
+
 " other possible free mapping: C-k
 
