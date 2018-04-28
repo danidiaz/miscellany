@@ -5,6 +5,7 @@ let mapleader = ","
 
 map <Leader>r :action RenameElement<CR>
 map <Leader>s :action FileStructurePopup<CR>
+" uppercase last inserted text
 map <Leader>u `[v`]~`]
 " Can also use Ctrl-Shift-[
 map <Leader>[ :action EditorCodeBlockStart<CR>
@@ -12,7 +13,14 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
 map <C-j> :action GotoImplementation<CR>
+map <C-s> :action EditorSelectWord<CR>
 " same as default IDEA action
 map <C-h> :action TypeHierarchy<CR>
 
-imap <C-l> <Esc>bgUawea
+" uppercase last inserted word
+imap <C-l> <Esc>bgUawea 
+" same as default IDEA action, but only in insert mode
+imap <C-v> <Esc>:action $Paste<CR>
+
+" other possible free mapping: C-k
+
