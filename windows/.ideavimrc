@@ -17,7 +17,7 @@ map <C-s> :action EditorSelectWord<CR>
 " same as default IDEA action
 map <C-h> :action TypeHierarchy<CR>
 
-map g; :action JumpToLastChange<CR>
+" map g; :action JumpToLastChange<CR>
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
