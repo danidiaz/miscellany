@@ -1,9 +1,11 @@
 " https://github.com/JetBrains/ideavim
 " https://github.com/Valloric/dotfiles/blob/master/intellij/ideavimrc
-
 set surround
 let mapleader = ","
 map <Leader>r :action RenameElement<CR>
+" Can also use Ctrl-Shift-[
+map <Leader>[ :action EditorCodeBlockStart<CR>
+" Can also use Ctrl-Shift-]
+map <Leader>] :action EditorCodeBlockEnd<CR>
 map <Leader>u `[v`]~`]
 imap <C-l> <Esc>bgUawea
-
