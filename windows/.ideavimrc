@@ -12,12 +12,12 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 " Can also use Ctrl-Shift-]
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
-map <C-j> :action GotoImplementation<CR>
+map <C-k> :action GotoImplementation<CR>
 map <C-s> :action EditorSelectWord<CR>
 " same as default IDEA action
 map <C-h> :action TypeHierarchy<CR>
 
-" map g; :action JumpToLastChange<CR>
+"map g; :action JumpToLastChange<CR>
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
