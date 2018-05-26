@@ -115,7 +115,8 @@ nnoremap <script> <silent> <unique> <BS> <C-^>
 
 " other possible remaps: tab, space, backspace, return, 
 "                        ctrl-m, ctrl-h, ctrl-j, ctrl-k, ctrl-n, ctrl-p, 
-"                        much stuff starting with [, perhaps s (when not taken by vim-sneak).
+"                        perhaps s (when not taken by vim-sneak)
+"                        much stuff starting with [, in particular [f and ]f which are deprecated.
 
 set wildignore+=.*
 set wildignore+=dist/*
