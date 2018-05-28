@@ -7,6 +7,8 @@ set nocompatible
 
 "execute pathogen#infect()
 set autoindent
+" https://www.gilesorr.com/blog/vim-ftplugin.html
+" http://vim.wikia.com/wiki/Keep_your_vimrc_file_clean
 filetype plugin indent on
 "set smartindent
 
