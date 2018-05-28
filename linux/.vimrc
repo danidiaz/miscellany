@@ -122,6 +122,7 @@ nnoremap <script> <silent> <unique> <BS> <C-^>
 
 set wildignore+=.*
 set wildignore+=dist/*
+set wildignore+=dist-newstyle/*
 set wildignore+=target/*
 
 if has("multi_byte")
