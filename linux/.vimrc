@@ -3,6 +3,10 @@
 "http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/
 "https://statico.github.io/vim3.html
 
+"https://github.com/romainl/idiomatic-vimrc/blob/master/idiomatic-vimrc.vim
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set nocompatible
 
 "execute pathogen#infect()
