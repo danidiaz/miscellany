@@ -4,8 +4,8 @@
 "https://statico.github.io/vim3.html
 
 "https://github.com/romainl/idiomatic-vimrc/blob/master/idiomatic-vimrc.vim
-unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+" unlet! skip_defaults_vim
+" source $VIMRUNTIME/defaults.vim
 
 set nocompatible
 
