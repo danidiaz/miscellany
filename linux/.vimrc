@@ -113,6 +113,11 @@ noremap <unique> <Leader>f :FZF<cr>
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 inoremap <C-l> <Esc>bgUawea
 
+" fzf
+nnoremap <script> <silent> <unique> <Leader>f :Files<CR>
+nnoremap <script> <silent> <unique> <Leader>l :Lines<CR>
+nnoremap <script> <silent> <unique> <Leader>c :Command<CR>
+
 " http://ellengummesson.com/blog/2015/08/01/dropping-ctrlp-and-other-vim-plugins/
 nnoremap <script> <silent> <unique> <BS> <C-^>
 " nnoremap <unique> <SPACE> :ls<cr>:b
