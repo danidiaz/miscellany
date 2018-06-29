@@ -84,17 +84,12 @@ set shortmess=atI
 let mapleader = ","
 
 " colorscheme zenburn
+" colorscheme iceberg
 colorscheme desert
-
-" let g:unite_prompt = '$'
-" noremap <script> <silent> <unique> <Leader>f :Unite -no-split file buffer<CR>
-" noremap <script> <silent> <unique> <Leader>b :Unite -no-split buffer<CR>
-" noremap <script> <silent> <unique> <Leader>r :Unite -no-split file_mru<CR>
-" noremap <script> <silent> <unique> <Leader>m :Unite -no-split bookmark<CR>
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
-nnoremap <Leader>l :l %:p:h<CR>:pwd<CR>
+" nnoremap <Leader>l :l %:p:h<CR>:pwd<CR>
 
 noremap <script> <silent> <unique> <Leader>y "*y
 noremap <script> <silent> <unique> <Leader>Y :%y*<CR>
@@ -133,6 +128,11 @@ set wildignore+=.*
 set wildignore+=dist/*
 set wildignore+=dist-newstyle/*
 set wildignore+=target/*
+
+" see also https://github.com/junegunn/fzf.vim for the Rg command
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading
+endif
 
 if has("multi_byte")
   if &termencoding == ""
