@@ -108,6 +108,8 @@ noremap <unique> <Leader>f :FZF<cr>
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 inoremap <C-l> <Esc>bgUawea
 
+let g:user_emmet_leader_key='<Leader>m'
+
 " fzf
 nnoremap <script> <silent> <unique> <Leader>f :Files<CR>
 nnoremap <script> <silent> <unique> <Leader>l :Lines<CR>
