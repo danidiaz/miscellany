@@ -23,8 +23,12 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+set foldcolumn=1
 set foldminlines=0
 set foldopen-=search
+
+" Program for the expression register
+set equalprg=''
 
 set cursorline
 " set cursorcolumn
