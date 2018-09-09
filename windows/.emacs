@@ -11,6 +11,11 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;; https://draculatheme.com/emacs/
+;; https://github.com/bbatsov/zenburn-emacs
+(load-theme 'dracula t)
+
 (setq inhibit-startup-screen t)
 (load "C:/Users/ZZZZZ/.emacs.d/lisp/PG/generic/proof-site")
 (global-set-key (kbd "C-c RET") 'proof-goto-point)
