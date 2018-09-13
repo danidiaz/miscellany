@@ -18,9 +18,14 @@
 ;; https://github.com/bbatsov/zenburn-emacs
 (load-theme 'dracula t)
 
+;; https://www.emacswiki.org/emacs/AlarmBell
+(setq visible-bell 1)
+
 (setq inhibit-startup-screen t)
 (load "C:/Users/ZZZZZ/.emacs.d/lisp/PG/generic/proof-site")
 (global-set-key (kbd "C-c RET") 'proof-goto-point)
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+ 
