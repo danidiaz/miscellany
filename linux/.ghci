@@ -4,6 +4,8 @@
 :set -XTypeApplications
 :set -XKindSignatures
 :set -XPolyKinds
+:set -XTypeFamilies
+:set -XGADTs
 import Data.Kind
 import Data.Foldable
 import Data.Traversable
