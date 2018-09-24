@@ -1,48 +1,11 @@
-:set -hide-package monads-fd
-:set -hide-package monads-tf
-:set -XTemplateHaskell
-:set -XNoMonomorphismRestriction
-
-import Language.Haskell.TH
-
+:set prompt "Λ "
+:set editor gvim
+:set -fprint-explicit-foralls
+:set -XTypeApplications
+:set -XKindSignatures
+:set -XPolyKinds
+import Data.Kind
+import Data.Foldable
+import Data.Traversable
 import Control.Applicative
 import Control.Monad
-import Control.Monad.Identity
-import Control.Monad.State
-import Control.Monad.Error
-import Control.Monad.Reader
-import Control.Monad.Writer 
-import Control.Monad.Cont
-import Control.Monad.Maybe
-import Control.Arrow
-
-import Control.Exception
-import qualified Control.Exception as Ex
--- import qualified Control.Exception.Control as ExC
-
-import Data.List
-import Data.Maybe
-
-import qualified Data.ByteString as B
-import qualified Data.Text as T
-
-import qualified Data.Enumerator as E
-import           Data.Enumerator (($$),(=$),($=))
-import qualified Data.Enumerator.Binary as EB
-import qualified Data.Enumerator.Text as ET
-import qualified Data.Enumerator.List as EL
-
-import qualified Data.Iteratee as I
-import           Data.Iteratee ((><>),(<><))
-import           Data.Iteratee.Char
-import qualified Data.Iteratee.Char as IC
-
-:set prompt "# "
-:set editor vim
-
-:def hoogle \str -> return $ ":! hoogle --count=9 \"" ++ str ++ "\""
-:def hasktags \_ -> return $ ":! find -name \\*\\.hs | xargs hasktags --ctags"
-
--- See issue#10 of The Monad.Reader 
-:set stop :list
-:def seq (\arg -> return ("seq (" ++ arg ++ ") ()"))
