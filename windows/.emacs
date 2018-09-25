@@ -33,3 +33,5 @@
 
 (setq visible-bell 1)
 (setq inhibit-compacting-font-caches 1)
+
+(tool-bar-mode -1)
