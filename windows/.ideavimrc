@@ -23,7 +23,7 @@ map <Leader>g :action Generate<CR>
 " non-unique.
 map <Leader>i :action GotoImplementation<CR>
 " F12 
-" map <Leader>w :action JumpToLastWindow<CR>
+map <Leader>w :action JumpToLastWindow<CR>
 
 " These shortcuts mimic the default Idea action for one edition mode, using the
 " Vim action for the other.
