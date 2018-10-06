@@ -6,13 +6,13 @@ let mapleader = ","
 
 " These are leader-based alternative shortcuts for actions whose corresponding idea shortcuts require function keys, Home or Insert.
 " Shift + F6 in idea.
-" Alt + R, then R (through the menu bar) agains also seems to work fine.
+" Alt + R, then R (through the menu bar) also seems to work fine.
 map <Leader>r :action RenameElement<CR>
 " Ctrl + F12 in idea.
 map <Leader>s :action FileStructurePopup<CR>
 " Alt + F7 in idea. 
 " Find usages in file is Ctrl + F7. 
-" Alt + E, then F, then U (through the menu bar) agains also seems to work fine.
+" Alt + E, then F, then U (through the menu bar) also seems to work fine.
 map <Leader>u :action FindUsages<CR>
 " Alt + Insert in idea.
 map <Leader>i :action Generate<CR>
@@ -43,7 +43,7 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
 " Perhaps just use the Idea shortcut Ctrl-Alt-B
-" Alt + N, then m (through the menu bar) agains also seems to work fine.
+" Alt + N, then m (through the menu bar) also seems to work fine.
 " map <C-k> :action GotoImplementation<CR>
 
 " This is Ctrl-W in the default keymap, but we are using it for Vim.
