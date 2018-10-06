@@ -4,10 +4,12 @@
 set surround
 let mapleader = ","
 
-" These are leader-based alternative shortcuts for actions whose corresponding idea shortcuts require function keys, Home or Insert.
+" These are leader-based alternative shortcuts for actions whose corresponding
+" idea shortcuts require hand-stretching combinations, function keys, Home or
+" Insert.
 " Shift + F6 in idea.
 " Alt + R, then R (through the menu bar) also seems to work fine.
-map <Leader>r :action RenameElement<CR>
+" map <Leader>r :action RenameElement<CR>
 " Ctrl + F12 in idea.
 map <Leader>s :action FileStructurePopup<CR>
 " Alt + F7 in idea. 
@@ -15,7 +17,11 @@ map <Leader>s :action FileStructurePopup<CR>
 " Alt + E, then F, then U (through the menu bar) also seems to work fine.
 map <Leader>u :action FindUsages<CR>
 " Alt + Insert in idea.
-map <Leader>i :action Generate<CR>
+map <Leader>g :action Generate<CR>
+" Perhaps just use the Idea shortcut Ctrl-Alt-B
+" Alt + N, then m (through the menu bar) also seems to work, but it is
+" non-unique.
+map <Leader>i :action GotoImplementation<CR>
 
 " These shortcuts mimic the default Idea action for one edition mode, using the
 " Vim action for the other.
@@ -42,9 +48,6 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 " Can also use Ctrl-Shift-]
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
-" Perhaps just use the Idea shortcut Ctrl-Alt-B
-" Alt + N, then m (through the menu bar) also seems to work fine.
-" map <C-k> :action GotoImplementation<CR>
 
 " This is Ctrl-W in the default keymap, but we are using it for Vim.
 map <C-s> :action EditorSelectWord<CR>
@@ -55,3 +58,5 @@ map <C-s> :action EditorSelectWord<CR>
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
+
+" still available: Ctrl-k
