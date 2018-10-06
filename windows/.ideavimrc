@@ -4,9 +4,16 @@ set surround
 let mapleader = ","
 
 map <Leader>r :action RenameElement<CR>
+map <Leader>i :action Generate<CR>
 map <Leader>s :action FileStructurePopup<CR>
-" uppercase last inserted text
-map <Leader>u `[v`]~`]
+map <Leader>u :action FindUsages<CR>
+
+" This is for going to related symbols. I can't find any effect in the community edition.
+" map <Leader>g :action GotoRelated<CR> 
+
+" uppercase last inserted text. Perhpas just use gU`[ instead.
+" map <Leader>u `[v`]~`]
+
 " Can also use Ctrl-Shift-[
 map <Leader>[ :action EditorCodeBlockStart<CR>
 " Can also use Ctrl-Shift-]
@@ -17,7 +24,7 @@ map <C-s> :action EditorSelectWord<CR>
 " same as default IDEA action
 map <C-h> :action TypeHierarchy<CR>
 
-"map g; :action JumpToLastChange<CR>
+nmap g; :action JumpToLastChange<CR>
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
