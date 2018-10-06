@@ -12,6 +12,7 @@ map <Leader>r :action RenameElement<CR>
 map <Leader>s :action FileStructurePopup<CR>
 " Alt + F7 in idea. 
 " Find usages in file is Ctrl + F7. 
+" Alt + E, then F, then U (through the menu bar) agains also seems to work fine.
 map <Leader>u :action FindUsages<CR>
 " Alt + Insert in idea.
 map <Leader>i :action Generate<CR>
