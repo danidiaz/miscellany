@@ -50,13 +50,8 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 " Can also use Ctrl-Shift-]
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
-
 " This is Ctrl-W in the default keymap, but we are using it for Vim.
 map <C-s> :action EditorSelectWord<CR>
-
-" Sadly, repeated actions do not jump to earlier changes.
-" Just use Ctrl-Shift+Backspace instead.
-" map g; :action JumpToLastChange<CR>
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
