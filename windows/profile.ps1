@@ -12,4 +12,5 @@ New-Alias which Get-Command
 # Better use "Edit environment variables for your account" instead of settign them here.
 
 # $env:FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --glob "!.svn/*" --glob "!*/target/*"'
+# $env:FZF_DEFAULT_COMMAND='rg --files --no-ignore --glob "!**/dist*" --glob "!**/target"'
 $env:FZF_DEFAULT_COMMAND='rg --files --no-ignore'
