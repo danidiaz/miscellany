@@ -7,6 +7,7 @@ let mapleader = ","
 " These are leader-based alternative shortcuts for actions whose corresponding
 " idea shortcuts require hand-stretching combinations, function keys, Home or
 " Insert.
+"
 " Shift + F6 in idea.
 " Alt + R, then R (through the menu bar) also seems to work fine.
 " map <Leader>r :action RenameElement<CR>
@@ -28,6 +29,7 @@ map <Leader>w :action JumpToLastWindow<CR>
 
 " These shortcuts mimic the default Idea action for one edition mode, using the
 " Vim action for the other.
+"
 " Same as default IDEA action, but only in normal mode. Delete previous char
 " in insert mode.
 " See also Ctrl + Shift + H for method hierarchy, Ctrl + Alt + H for call
