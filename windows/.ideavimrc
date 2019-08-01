@@ -1,3 +1,6 @@
+set relativenumber
+set number
+
 " https://youtrack.jetbrains.com/issue/VIM-959
 set ideamarks
 
@@ -69,7 +72,8 @@ map <Leader>[ :action EditorCodeBlockStart<CR>
 map <Leader>] :action EditorCodeBlockEnd<CR>
 
 " This is Ctrl-W in the default keymap, but we are using it for Vim.
-map <C-s> :action EditorSelectWord<CR>
+" map <C-s> :action EditorSelectWord<CR> " somewhat unconfrotable to type
+map <C-d> :action EditorSelectWord<CR> 
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
