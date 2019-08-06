@@ -74,7 +74,8 @@ map <Leader>] :action EditorCodeBlockEnd<CR>
 " This is Ctrl-W in the default keymap, but we are using it for Vim.
 " map <C-s> :action EditorSelectWord<CR> " somewhat unconfrotable to type
 " map <C-d> :action EditorSelectWord<CR> " ditto
-map <C-k> :action EditorSelectWord<CR>   " better to use your two hands!
+" better to use your two hands!
+map <C-k> :action EditorSelectWord<CR>   
 
 " uppercase last inserted word
 imap <C-l> <Esc>bgUawea 
