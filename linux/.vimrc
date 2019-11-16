@@ -104,7 +104,7 @@ noremap <script> <silent> <unique> <Leader>w :update!<CR>
 noremap <script> <silent> <unique> <Leader>q :q!<CR>
 "noremap <script> <silent> <unique> <Leader>x :x!<CR>
 noremap <unique> <Leader>x :ls<cr>:b<SPACE>
-noremap <unique> <Leader>f :FZF<cr>
+"noremap <unique> <Leader>f :FZF<cr>
 
 noremap <script> <silent> <unique> <Leader>u `[v`]~`]
 inoremap <C-l> <Esc>bgUawea
