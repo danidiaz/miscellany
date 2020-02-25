@@ -23,3 +23,6 @@ nnoremap <script> <silent> [M gg/^\s*)\s*where\s*$<CR>zb<CR>
 nnoremap <script> <silent> ]n /^-- \$\w\+<CR>z<CR>
 " previous named chunk of documentation
 nnoremap <script> <silent> [n ?^-- \$\w\+<CR>z<CR>
+
+" surround for pragma delimiters
+let b:surround_35 = "{-# \r #-}"
