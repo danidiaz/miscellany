@@ -113,6 +113,7 @@ let g:user_emmet_leader_key='<Leader>m'
 
 " fzf
 nnoremap <script> <silent> <unique> <Leader>f :Files<CR>
+nnoremap <script> <silent> <unique> <Leader>b :Buffers<CR>
 nnoremap <script> <silent> <unique> <Leader>l :Lines<CR>
 nnoremap <script> <silent> <unique> <Leader>c :Command<CR>
 
