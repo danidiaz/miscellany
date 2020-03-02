@@ -42,6 +42,9 @@ set number
 set showmatch
 set hidden
 
+" https://vimways.org/2018/the-power-of-diff/
+set diffopt+=algorithm:patience
+
 set backupdir=/tmp
 set directory=/tmp
 
