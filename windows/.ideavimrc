@@ -35,6 +35,9 @@ map <Leader>s :action FileStructurePopup<CR>
 map <Leader>i :action GotoImplementation<CR>
 map <Leader>m :action GotoImplementation<CR>
 map <Leader>d :action GotoImplementation<CR>
+" Jump to next/previous error, show error description
+map <Leader>e :action ShowErrorDescription<CR>
+map <Space> :action GotoNextError<CR>
 " Alt + F7 in idea. 
 " Find usages in file is Ctrl + F7. 
 " Alt + E, then F, then U (through the menu bar) also seems to work fine.
@@ -43,6 +46,7 @@ map <Leader>f :action FindUsages<CR>
 map <Leader>g :action Generate<CR>
 " F12 
 map <Leader>w :action JumpToLastWindow<CR>
+" Possibly redundant given "Run Anything" DoubleCtrl
 map <Leader>r :action ChooseRunConfiguration<CR>
 
 " These shortcuts mimic the default Idea action for one edition mode, using the
