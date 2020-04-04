@@ -36,6 +36,7 @@ map <Leader>i :action GotoImplementation<CR>
 map <Leader>m :action GotoImplementation<CR>
 map <Leader>d :action GotoImplementation<CR>
 " Jump to next/previous error, show error description
+" https://stackoverflow.com/questions/13346245/keyboard-shortcut-to-display-error-in-intellij
 map <Leader>e :action ShowErrorDescription<CR>
 map <Space> :action GotoNextError<CR>
 " Alt + F7 in idea. 
