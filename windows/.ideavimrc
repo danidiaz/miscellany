@@ -10,6 +10,12 @@ set ideajoin
 " https://youtrack.jetbrains.com/issue/VIM-1521
 set commentary
 
+" dia daa cia caa
+set argtextobj
+
+" die dae cie cae
+set textobj-entire
+
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
 
