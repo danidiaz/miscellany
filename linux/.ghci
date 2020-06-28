@@ -6,6 +6,7 @@
 :set -XPolyKinds
 :set -XTypeFamilies
 :set -XGADTs
+import GHC.Types
 import Data.Kind
 import Data.Foldable
 import Data.Traversable
