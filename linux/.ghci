@@ -1,6 +1,6 @@
 :set prompt "Λ "
 :set editor gvim
-:set -fprint-explicit-foralls
+:set -fprint-explicit-foralls -fprint-explicit-coercions -fprint-explicit-runtime-reps -fprint-explicit-kinds
 :set -XTypeApplications
 :set -XKindSignatures
 :set -XPolyKinds
