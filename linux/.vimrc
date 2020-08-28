@@ -132,6 +132,7 @@ nnoremap <script> <silent> <unique> <BS> <C-^>
 "                        perhaps s (when not taken by vim-sneak)
 "                        much stuff starting with [, in particular [f and ]f which are deprecated.
 
+" args `rg --files -g *.hs`
 set wildignore+=.*
 set wildignore+=dist
 set wildignore+=dist/*
