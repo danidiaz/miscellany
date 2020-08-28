@@ -133,9 +133,16 @@ nnoremap <script> <silent> <unique> <BS> <C-^>
 "                        much stuff starting with [, in particular [f and ]f which are deprecated.
 
 set wildignore+=.*
+set wildignore+=dist
 set wildignore+=dist/*
-set wildignore+=dist-newstyle/*
+set wildignore+=target
 set wildignore+=target/*
+set wildignore+=.git
+set wildignore+=.git/
+set wildignore+=dist-newstyle
+set wildignore+=dist-newstyle/*
+set wildignore+=node_modules
+set wildignore+=node_modules/*
 
 " see also https://github.com/junegunn/fzf.vim for the Rg command
 if executable('rg')
