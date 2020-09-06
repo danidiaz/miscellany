@@ -1,0 +1,10 @@
+[alias]
+    cp = cherry-pick
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch
+    ds = diff --staged
+    ll = log --graph --oneline --decorate
+    st = status -s -b
+    
