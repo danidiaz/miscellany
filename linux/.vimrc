@@ -121,6 +121,10 @@ nnoremap <script> <silent> <unique> <Leader>b :Buffers<CR>
 nnoremap <script> <silent> <unique> <Leader>l :Lines<CR>
 nnoremap <script> <silent> <unique> <Leader>c :Command<CR>
 
+"
+nnoremap <script> <silent> <unique> g<SPACE> :cnext<CR>
+nnoremap <script> <silent> <unique> <SPACE> :lnext<CR>
+
 " http://ellengummesson.com/blog/2015/08/01/dropping-ctrlp-and-other-vim-plugins/
 nnoremap <script> <silent> <unique> <BS> <C-^>
 " nnoremap <unique> <SPACE> :ls<cr>:b
