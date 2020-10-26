@@ -1,3 +1,10 @@
+; https://www.youtube.com/watch?v=VxpCgQyUXlI
+[merge]
+	conflictstyle = diff3
+	tool = gvimdiff3
+[mergetool "gvimdiff3"]
+    trustExitCode = false
+    cmd = gvim -f -d -c ':wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
     cp = cherry-pick
     cl = clone
