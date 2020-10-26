@@ -1,5 +1,6 @@
 ; https://www.youtube.com/watch?v=VxpCgQyUXlI
 [merge]
+    ; https://stackoverflow.com/questions/27417656/should-diff3-be-default-conflictstyle-on-git
     conflictstyle = diff3
     tool = gvimdiff3
 ; https://stackoverflow.com/questions/1251681/git-mergetool-generates-unwanted-orig-files
