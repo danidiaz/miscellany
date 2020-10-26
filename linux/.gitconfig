@@ -2,9 +2,12 @@
 [merge]
     conflictstyle = diff3
     tool = gvimdiff3
+; https://stackoverflow.com/questions/1251681/git-mergetool-generates-unwanted-orig-files
+[mergetool]
+	keepBackup = false
 [mergetool "gvimdiff3"]
     trustExitCode = false
-    cmd = gvim -f -d -c ':set modifiable | :set write | :wincmd J' -M $MERGED $LOCAL $BASE $REMOTE
+    cmd = gvim -f -d -M -c ':set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
     cp = cherry-pick
     cl = clone
