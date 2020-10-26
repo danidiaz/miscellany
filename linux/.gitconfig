@@ -5,9 +5,10 @@
 ; https://stackoverflow.com/questions/1251681/git-mergetool-generates-unwanted-orig-files
 [mergetool]
 	keepBackup = false
+; http://vimdoc.sourceforge.net/htmldoc/diff.html
 [mergetool "gvimdiff3"]
     trustExitCode = false
-    cmd = gvim -f -d -M -c ':set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
+    cmd = gvim -f -d -M -c 'set diffopt=internal,filler,closeoff,algorithm:patience,iwhiteall | :set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
     cp = cherry-pick
     cl = clone
