@@ -3,9 +3,10 @@
     cl = clone
     ci = commit
     co = checkout
-    cob = checkout -b
     br = branch
     ds = diff --staged
     ll = log --graph --oneline --decorate
     st = status -s -b
-    
+    um = diff --name-only --diff-filter=U
+    mt = mergetool
+    dt = difftool
