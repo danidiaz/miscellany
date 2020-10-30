@@ -15,9 +15,10 @@
     cl = clone
     ; try using switch instead
     ; co = checkout
-    ci = commit
-    ca = commit -a
-    br = branch
+    c = commit
+    C = commit --all
+    b = branch -vv
+    B = branch -vv --all
     ds = diff --staged
     l = log --graph --oneline --decorate
     L = log --graph --oneline --decorate --all
