@@ -13,16 +13,19 @@
 [alias]
     cp = cherry-pick
     cl = clone
+    ; try using switch instead
+    ; co = checkout
     ci = commit
-    co = checkout
+    ca = commit -a
     br = branch
     ds = diff --staged
-    ll = log --graph --oneline --decorate
-    la = log --graph --oneline --decorate --all
+    l = log --graph --oneline --decorate
+    L = log --graph --oneline --decorate --all
     ; This for following renames to a single file.
     ; https://stackoverflow.com/a/4434056/1364288
     lf = log --graph --oneline --decorate --summary --follow 
-    st = status -s -b
-    um = diff --name-only --diff-filter=U
+    Lf = log --graph --oneline --decorate --summary --follow --all 
+    s = status -s -b
+    u = diff --name-only --diff-filter=U
     mt = mergetool
     dt = difftool
