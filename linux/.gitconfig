@@ -18,6 +18,7 @@
     br = branch
     ds = diff --staged
     ll = log --graph --oneline --decorate
+    la = log --graph --oneline --decorate --all
     st = status -s -b
     um = diff --name-only --diff-filter=U
     mt = mergetool
