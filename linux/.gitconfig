@@ -19,7 +19,9 @@
     ds = diff --staged
     ll = log --graph --oneline --decorate
     la = log --graph --oneline --decorate --all
-    lf = log --graph --oneline --decorate --follow
+    ; This for following renames to a single file.
+    ; https://stackoverflow.com/a/4434056/1364288
+    lf = log --graph --oneline --decorate --summary --follow 
     st = status -s -b
     um = diff --name-only --diff-filter=U
     mt = mergetool
