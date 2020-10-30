@@ -19,6 +19,7 @@
     ds = diff --staged
     ll = log --graph --oneline --decorate
     la = log --graph --oneline --decorate --all
+    lf = log --graph --oneline --decorate --follow
     st = status -s -b
     um = diff --name-only --diff-filter=U
     mt = mergetool
