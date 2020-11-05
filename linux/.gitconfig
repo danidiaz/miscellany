@@ -11,21 +11,21 @@
     trustExitCode = false
     cmd = gvim -f -d -M -c 'set diffopt=internal,filler,closeoff,algorithm:patience,iwhiteall | :set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
-    cp = cherry-pick
-    cl = clone
+    ; cp = cherry-pick
+    ; cl = clone
     ; try using switch instead
     ; co = checkout
     c = commit
-    C = commit --all
+    ca = commit --all
     b = branch -vv
-    B = branch -vv --all
+    ba = branch -vv --all
     ds = diff --staged
     l = log --graph --oneline --decorate
-    L = log --graph --oneline --decorate --all
+    la = log --graph --oneline --decorate --all
     ; This for following renames to a single file.
     ; https://stackoverflow.com/a/4434056/1364288
     lf = log --graph --oneline --decorate --summary --follow 
-    Lf = log --graph --oneline --decorate --summary --follow --all 
+    laf = log --graph --oneline --decorate --summary --all --follow 
     s = status -s -b
     u = diff --name-only --diff-filter=U
     mt = mergetool
