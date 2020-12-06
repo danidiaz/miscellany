@@ -79,10 +79,10 @@ imap <C-v> <Esc><Action>($Paste)
 " The default C-o and C-i behaviours have certain inconsistencies with
 " Vim which I can't quite pinpoint.
 " I'm using the default IntelliJ behaviours instead.
-nnoremap <C-o> <Action>(Back)
-nnoremap <C-i> <Action>(Forward)
-nnoremap g; <Action>(JumpToLastChange)
-nnoremap g, <Action>(JumpToNextChange)
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+map g; <Action>(JumpToLastChange)
+map g, <Action>(JumpToNextChange)
 
 "
 " Here are mappings about which I'm less sure.
