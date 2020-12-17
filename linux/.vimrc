@@ -4,6 +4,7 @@
 " http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/
 " https://statico.github.io/vim3.html
 " https://www.reddit.com/r/vim/comments/kbuv24/what_are_the_good_applications_of_automatic_marks/
+" :h linewise :h linewise-register :h getreg :h getregtype :h setreg
 " https://www.reddit.com/r/vim/comments/vvm61/why_does_vim_sometimes_pastes_multiple_lines/c5818m2/ linewise and characterwise
 
 " https://github.com/romainl/idiomatic-vimrc/blob/master/idiomatic-vimrc.vim
