@@ -3,6 +3,7 @@
 " http://nvie.com/posts/how-i-boosted-my-vim/
 " http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/
 " https://statico.github.io/vim3.html
+" https://www.reddit.com/r/vim/comments/kbuv24/what_are_the_good_applications_of_automatic_marks/
 
 " https://github.com/romainl/idiomatic-vimrc/blob/master/idiomatic-vimrc.vim
 " unlet! skip_defaults_vim
