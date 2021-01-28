@@ -92,6 +92,8 @@ set incsearch
 set shortmess=atI
 
 let mapleader = ","
+" recover the normal behavior of , (for going back in character search for example) by double-tapping ,
+nnoremap <script> <silent> <unique> <Leader><Leader> ,
 
 " colorscheme zenburn
 " colorscheme iceberg
