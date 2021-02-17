@@ -22,6 +22,9 @@ set argtextobj
 " die dae cie cae
 set textobj-entire
 
+" https://youtrack.jetbrains.com/issue/VIM-1042
+set NERDTree
+
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
 
