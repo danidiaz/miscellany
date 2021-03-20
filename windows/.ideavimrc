@@ -54,7 +54,6 @@ map <Leader>d <Action>(GotoImplementation)
 " Jump to next/previous error, show error description
 " https://stackoverflow.com/questions/13346245/keyboard-shortcut-to-display-error-in-intellij
 map <Leader>e <Action>(ShowErrorDescription)
-map <Space> <Action>(GotoNextError)
 " Alt + F7 in idea. 
 " Find usages in file is Ctrl + F7. 
 " Alt + E, then F, then U (through the menu bar) also seems to work fine.
@@ -78,6 +77,8 @@ map <C-h> <Action>(TypeHierarchy)
 " mode in normal mode.
 imap <C-v> <Esc><Action>($Paste)
 
+" I like using space for jumping to the next error or issue
+map <Space> <Action>(GotoNextError)
 
 " The default C-o and C-i behaviours have certain inconsistencies with
 " Vim which I can't quite pinpoint.
