@@ -124,9 +124,9 @@ let g:user_emmet_leader_key='<Leader>m'
 
 " fzf
 nnoremap <script> <silent> <unique> <Leader>f :Files<CR>
-nnoremap <script> <silent> <unique> <Leader>b :Buffers<CR>
+" nnoremap <script> <silent> <unique> <Leader>b :Buffers<CR>
 " an experiment, b is akward to type!
-nnoremap <script> <silent> <unique> <Leader>a :Buffers<CR>
+nnoremap <script> <silent> <unique> <Leader>x :Buffers<CR>
 nnoremap <script> <silent> <unique> <Leader>l :Lines<CR>
 nnoremap <script> <silent> <unique> <Leader>c :Command<CR>
 
