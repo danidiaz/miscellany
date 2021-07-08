@@ -25,6 +25,14 @@ set textobj-entire
 " https://youtrack.jetbrains.com/issue/VIM-1042
 set NERDTree
 
+" https://github.com/JetBrains/ideavim/wiki/Emulated-plugins#vim-paragraph-motion
+set vim-paragraph-motion
+
+" https://github.com/JetBrains/ideavim/wiki/Emulated-plugins#vim-indent-object
+set textobj-indent
+
+set exchange
+
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
 
