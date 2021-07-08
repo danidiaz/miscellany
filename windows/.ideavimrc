@@ -81,6 +81,7 @@ imap <C-v> <Esc><Action>($Paste)
 
 " I like using space for jumping to the next error or issue
 map <Space> <Action>(GotoNextError)
+map <Leader><Space> <Action>(GotoPreviousError)
 
 " The default C-o and C-i behaviours have certain inconsistencies with
 " Vim which I can't quite pinpoint.
