@@ -44,8 +44,8 @@ let mapleader = ","
 " map <Leader>r :action RenameElement<CR>
 " Ctrl + F12 in idea.
 " map <Leader>s Action(FileStructurePopup)
-map <Leader>s <Action>(HideAllWindows)
-map s <Action>(FileStructurePopup)
+map s <Action>(HideAllWindows)
+map <Leader>s <Action>(FileStructurePopup)
 " Perhaps just use the Idea shortcut Ctrl-Alt-B
 " Alt + N, then m (through the menu bar) also seems to work, but it is
 " non-unique.
@@ -65,6 +65,7 @@ map <Leader>g <Action>(Generate)
 map <Leader>w <Action>(JumpToLastWindow)
 " Possibly redundant given "Run Anything" DoubleCtrl
 map <Leader>r <Action>(ChooseRunConfiguration)
+map <Leader>a <Action>(AnalyzeJavaMenu)
 
 " These shortcuts mimic the default Idea action for one edition mode, using the
 " Vim action for the other.
