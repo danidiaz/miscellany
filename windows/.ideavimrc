@@ -67,6 +67,7 @@ map <Leader>e <Action>(ShowErrorDescription)
 " Find usages in file is Ctrl + F7. 
 " Alt + E, then F, then U (through the menu bar) also seems to work fine.
 map <Leader>f <Action>(FindUsages)
+map <Leader>F <Action>(HighlightUsagesInFile)
 " Alt + Insert in idea.
 map <Leader>g <Action>(Generate)
 " F12 
