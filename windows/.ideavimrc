@@ -60,7 +60,7 @@ set exchange
 " in insert mode.
 " See also Ctrl + Shift + H for method hierarchy, Ctrl + Alt + H for call
 " hierarchy.
-map <C-h> <Action>(TypeHierarchy)
+imap <C-h> <Action>(TypeHierarchy)
 " Same as default IDEA action, but only in insert mode. Enter block-visual
 " mode in normal mode.
 imap <C-v> <Esc><Action>($Paste)
