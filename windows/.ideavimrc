@@ -4,8 +4,10 @@ set number
 
 " https://github.com/JetBrains/ideavim/blob/master/doc/emulated-plugins.md
 
+set surround
+
 " https://youtrack.jetbrains.com/issue/VIM-1970 
-set set highlightedyank
+set highlightedyank
 
 " https://youtrack.jetbrains.com/issue/VIM-959
 set ideamarks
@@ -84,7 +86,6 @@ imap <C-v> <Esc><Action>($Paste)
 " https://github.com/JetBrains/ideavim
 " https://github.com/Valloric/dotfiles/blob/master/intellij/ideavimrc
 " https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
-set surround
 let mapleader = ","
 
 " These are leader-based alternative shortcuts for actions whose corresponding
