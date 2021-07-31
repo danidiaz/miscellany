@@ -33,6 +33,38 @@ set textobj-indent
 
 set exchange
 
+" Perhaps this could be used as an easier way to say "same as regular Idea behaviour, but only on insert mode"
+" https://github.com/JetBrains/ideavim/wiki/sethandler
+" sethandler <C-A> a:vim
+" sethandler <C-C> a:vim
+" sethandler <C-D> a:vim
+" sethandler <C-F> a:vim
+" sethandler <C-I> a:vim
+" sethandler <C-J> a:vim
+" sethandler <C-K> a:vim
+" sethandler <C-L> a:vim
+" sethandler <C-M> a:vim
+" sethandler <C-O> a:vim
+" sethandler <C-P> a:vim
+" sethandler <C-R> a:vim
+" sethandler <C-S> a:vim
+" sethandler <C-V> a:vim
+" sethandler <C-W> a:vim
+" sethandler <C-[> a:vim
+" sethandler <C-]> a:vim
+
+" These shortcuts mimic the default Idea action for one edition mode, using the
+" Vim action for the other.
+"
+" Same as default IDEA action, but only in normal mode. Delete previous char
+" in insert mode.
+" See also Ctrl + Shift + H for method hierarchy, Ctrl + Alt + H for call
+" hierarchy.
+map <C-h> <Action>(TypeHierarchy)
+" Same as default IDEA action, but only in insert mode. Enter block-visual
+" mode in normal mode.
+imap <C-v> <Esc><Action>($Paste)
+
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
 
@@ -76,21 +108,9 @@ map <Leader>w <Action>(JumpToLastWindow)
 map <Leader>r <Action>(ChooseRunConfiguration)
 map <Leader>a <Action>(AnalyzeJavaMenu)
 
-" These shortcuts mimic the default Idea action for one edition mode, using the
-" Vim action for the other.
-"
-" Same as default IDEA action, but only in normal mode. Delete previous char
-" in insert mode.
-" See also Ctrl + Shift + H for method hierarchy, Ctrl + Alt + H for call
-" hierarchy.
-map <C-h> <Action>(TypeHierarchy)
-" Same as default IDEA action, but only in insert mode. Enter block-visual
-" mode in normal mode.
-imap <C-v> <Esc><Action>($Paste)
-
 " I like using space for jumping to the next error or issue
 map <Space> <Action>(GotoNextError)
-" Kind of make more sense to use Backspace to go back...
+" Kind of makes more sense to use Backspace to go back... but could it be assigned a better action?
 map <BS> <Action>(GotoPreviousError)
 " map <Leader><Space> <Action>(GotoPreviousError)
 
