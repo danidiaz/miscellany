@@ -33,6 +33,18 @@ set textobj-indent
 
 set exchange
 
+" remenber to assing to Vim the following shortcuts!
+" C-h
+" C-l
+" C-o
+" C-i
+" C-v
+" C-k
+" C-w the IDE behaviour is mapped to C-k
+
+" consider NOT assigning to Vim the following shortcuts:
+" C-b find occurrences in file popup
+
 " Perhaps this could be used as an easier way to say 'same as regular Idea behaviour, but only on insert mode'
 " https://github.com/JetBrains/ideavim/wiki/sethandler
 " sethandler <C-A> a:vim
