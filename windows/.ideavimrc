@@ -47,37 +47,33 @@ set exchange
 " consider NOT assigning to Vim the following shortcuts:
 " C-b find occurrences in file popup
 
-" Perhaps this could be used as an easier way to say 'same as regular Idea behaviour, but only on insert mode'
 " https://github.com/JetBrains/ideavim/wiki/sethandler
-" sethandler <C-A> a:vim
-" sethandler <C-C> a:vim
-" sethandler <C-D> a:vim
-" sethandler <C-F> a:vim
-" sethandler <C-I> a:vim
-" sethandler <C-J> a:vim
-" sethandler <C-K> a:vim
-" sethandler <C-L> a:vim
-" sethandler <C-M> a:vim
-" sethandler <C-O> a:vim
-" sethandler <C-P> a:vim
-" sethandler <C-R> a:vim
-" sethandler <C-S> a:vim
-" sethandler <C-V> a:vim
-" sethandler <C-W> a:vim
-" sethandler <C-[> a:vim
-" sethandler <C-]> a:vim
-
-" These shortcuts mimic the default Idea action for one edition mode, using the
-" Vim action for the other.
-"
+" To be able to say 'same as regular Idea behaviour, but only on insert mode'.
+" 
 " Same as default IDEA action, but only in normal mode. Delete previous char
 " in insert mode.
 " See also Ctrl + Shift + H for method hierarchy, Ctrl + Alt + H for call
 " hierarchy.
-map <C-h> <Action>(TypeHierarchy)
+sethandler <C-h> n:ide
 " Same as default IDEA action, but only in insert mode. Enter block-visual
 " mode in normal mode.
-imap <C-v> <Esc><Action>($Paste)
+sethandler <C-v> i:ide
+" sethandler <C-a> a:vim
+" sethandler <C-c> a:vim
+" sethandler <C-d> a:vim
+" sethandler <C-f> a:vim
+" sethandler <C-i> a:vim
+" sethandler <C-j> a:vim
+" sethandler <C-k> a:vim
+" sethandler <C-l> a:vim
+" sethandler <C-m> a:vim
+" sethandler <C-o> a:vim
+" sethandler <C-p> a:vim
+" sethandler <C-r> a:vim
+" sethandler <C-s> a:vim
+" sethandler <C-w> a:vim
+" sethandler <C-[> a:vim
+" sethandler <C-]> a:vim
 
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
