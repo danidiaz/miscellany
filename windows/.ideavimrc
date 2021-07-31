@@ -33,7 +33,7 @@ set textobj-indent
 
 set exchange
 
-" remenber to assing to Vim the following shortcuts!
+" remember to assing to Vim the following shortcuts!
 " C-h
 " C-l
 " C-o
