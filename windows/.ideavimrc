@@ -33,7 +33,7 @@ set textobj-indent
 
 set exchange
 
-" Perhaps this could be used as an easier way to say "same as regular Idea behaviour, but only on insert mode"
+" Perhaps this could be used as an easier way to say 'same as regular Idea behaviour, but only on insert mode'
 " https://github.com/JetBrains/ideavim/wiki/sethandler
 " sethandler <C-A> a:vim
 " sethandler <C-C> a:vim
