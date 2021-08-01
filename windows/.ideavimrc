@@ -41,11 +41,30 @@ set exchange
 " C-o
 " C-i
 " C-v
+" C-w Vim uses it to switch windows, the IDE behaviour is mapped to C-k instead
 " C-k
-" C-w the IDE behaviour is mapped to C-k
+" C-m Enter alternative
+" C-[ A great Esc key alternative! In the ide, moves caret to code block start.
+" C-] Go to definition. In the ide, moves caret to code block end.
 
 " consider NOT assigning to Vim the following shortcuts:
+" C-e recent files popup window is very useful
 " C-b find occurrences in file popup
+" C-u go to super method
+" C-q info popup
+" C-j We already have j in Vim, better use it for Insert Live Template
+" C-n class search
+
+" unsure about assigning to Vim or to IDE
+" C-f find or move forward?
+" C-r replace or redo?
+" C-y
+" C-c We already have C-[, don't we?
+" C-p kind of not very used withou C-n
+" C-s doesn't seem very useful in Vim
+" C-t update project in IDEA, something something tag stack in Vim
+" C-a I don't use it that much in Vim
+" C-x same as above
 
 " https://github.com/JetBrains/ideavim/wiki/sethandler
 " To be able to say 'same as regular Idea behaviour, but only on insert mode'.
@@ -58,22 +77,6 @@ sethandler <C-h> n:ide
 " Same as default IDEA action, but only in insert mode. Enter block-visual
 " mode in normal mode.
 sethandler <C-v> i:ide
-" sethandler <C-a> a:vim
-" sethandler <C-c> a:vim
-" sethandler <C-d> a:vim
-" sethandler <C-f> a:vim
-" sethandler <C-i> a:vim
-" sethandler <C-j> a:vim
-" sethandler <C-k> a:vim
-" sethandler <C-l> a:vim
-" sethandler <C-m> a:vim
-" sethandler <C-o> a:vim
-" sethandler <C-p> a:vim
-" sethandler <C-r> a:vim
-" sethandler <C-s> a:vim
-" sethandler <C-w> a:vim
-" sethandler <C-[> a:vim
-" sethandler <C-]> a:vim
 
 " https://github.com/JetBrains/ideavim/wiki/Select-mode
 " set selectmode-=template
