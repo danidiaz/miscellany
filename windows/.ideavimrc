@@ -118,7 +118,7 @@ map <Leader>g <Action>(Generate)
 map <Leader>w <Action>(JumpToLastWindow)
 " Possibly redundant given "Run Anything" DoubleCtrl
 map <Leader>r <Action>(ChooseRunConfiguration)
-map <Leader>a <Action>(AnalyzeJavaMenu)
+map <Leader>a <Action>(AnalyzeActionsPopup)
 
 " I like using space for jumping to the next error or issue
 map <Space> <Action>(GotoNextError)
