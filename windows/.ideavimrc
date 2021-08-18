@@ -96,8 +96,11 @@ let mapleader = ","
 " map <Leader>r :action RenameElement<CR>
 " Ctrl + F12 in idea.
 " map <Leader>s Action(FileStructurePopup)
-map s <Action>(HideAllWindows)
+map s <Action>(SelectIn)
+" Perhaps a bit useless compared to search anything.
+"map s <Action>(GotoSymbol)
 map <Leader>s <Action>(FileStructurePopup)
+map <Leader>S <Action>(StructuralSearchActions)
 " Perhaps just use the Idea shortcut Ctrl-Alt-B
 " Alt + N, then m (through the menu bar) also seems to work, but it is
 " non-unique.
@@ -115,16 +118,19 @@ map <Leader>F <Action>(HighlightUsagesInFile)
 " Alt + Insert in idea.
 map <Leader>g <Action>(Generate)
 " F12 
-map <Leader>w <Action>(JumpToLastWindow)
+map <Leader>w <Action>(HideAllWindows)
+map <Leader>W <Action>(JumpToLastWindow)
 " Possibly redundant given "Run Anything" DoubleCtrl
 map <Leader>r <Action>(ChooseRunConfiguration)
+map <Leader>R <Action>(Refactorings.QuickListPopupAction)
 map <Leader>a <Action>(AnalyzeActionsPopup)
 
 " I like using space for jumping to the next error or issue
 map <Space> <Action>(GotoNextError)
 " Kind of makes more sense to use Backspace to go back... but could it be assigned a better action?
-map <BS> <Action>(GotoPreviousError)
-" map <Leader><Space> <Action>(GotoPreviousError)
+map <Leader><Space> <Action>(GotoPreviousError)
+"map <BS> <Action>(GotoPreviousError)
+map <BS> <Action>(GotoRelated)
 
 
 " The default C-o and C-i behaviours have certain inconsistencies with
