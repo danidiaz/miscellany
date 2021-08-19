@@ -2,6 +2,10 @@
 set relativenumber
 set number
 
+" https://superuser.com/questions/622898/how-to-turn-off-the-bell-sound-in-intellij
+" https://stackoverflow.com/questions/63386803/how-to-turn-off-a-bell-in-intellij-idea
+set visualbell
+
 " https://github.com/JetBrains/ideavim/blob/master/doc/emulated-plugins.md
 
 set surround
