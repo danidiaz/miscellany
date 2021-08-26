@@ -22,3 +22,6 @@ set renderoptions=type:directx,geom:1,taamode:1
 
 " https://www.reddit.com/r/vim/comments/54tbjb/supercharge_vim_with_fzf_and_ripgrep/
 set grepprg=rg\ --vimgrep
+
+" https://github.com/onivim/oni/issues/2342#issuecomment-402953008
+tnoremap <s-space> <space>
