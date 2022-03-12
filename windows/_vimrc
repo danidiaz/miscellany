@@ -39,6 +39,8 @@ set shortmess=atI
 
 let mapleader = ","
 
+command! GitBash term "C:\Program Files\Git\bin\bash.exe"
+
 " Using the Silver Searcher on Windows.
 " http://blog.kowalczyk.info/software/the-silver-searcher-for-windows.html
 " http://jaxbot.me/articles/ag_the_silver_searcher_for_windows_6_8_2013
