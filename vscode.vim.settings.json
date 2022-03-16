@@ -1,0 +1,25 @@
+{
+    "vim.highlightedyank.enable": true,
+    "vim.sneak": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+        "before": ["<C-q>"],
+        "commands": ["editor.action.showHover"]
+        },
+        {
+        "before": ["<Space>"],
+        "commands": ["editor.action.marker.nextInFiles"]
+        },
+        {
+        "before": ["<Leader>","r"],
+        "commands": ["editor.action.goToReferences"],
+        "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+        },
+        {
+        "before": ["<Leader>","R"],
+        "commands": ["references-view.findReferences"],
+        "when" : ["editorHasReferenceProvider"]
+        }
+    ]
+}
