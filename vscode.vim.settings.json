@@ -21,5 +21,6 @@
         "commands": ["references-view.findReferences"],
         "when" : ["editorHasReferenceProvider"]
         }
-    ]
+    ],
+    "vim.leader": ","
 }
