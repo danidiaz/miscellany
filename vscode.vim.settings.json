@@ -1,4 +1,5 @@
 {
+    "vim.handleKeys": { "<C-h>": false },
     "vim.highlightedyank.enable": true,
     "vim.sneak": true,
     "vim.useSystemClipboard": true,
