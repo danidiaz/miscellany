@@ -1,7 +1,8 @@
 {
     "vim.handleKeys": { 
             "<C-h>": false,
-            "<C-t>": false 
+            "<C-t>": false,
+            "<C-b>": false 
         },
     "vim.highlightedyank.enable": true,
     "vim.sneak": true,
