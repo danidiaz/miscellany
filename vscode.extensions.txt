@@ -1,8 +1,6 @@
+- Remote-WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 - Bookmarks https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
 - GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 - Haskell https://marketplace.visualstudio.com/items?itemName=haskell.haskell 
 - Nix https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix 
-
 - Nix environment selector https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector
-
-- Remote-WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
