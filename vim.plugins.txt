@@ -1,0 +1,12 @@
+$ pwd 
+/home/myusername/.vim/pack/foo/start
+
+git clone git@github.com:junegunn/fzf.git
+git clone git@github.com:junegunn/fzf.vim.git
+git clone git@github.com:tpope/vim-fugitive.git
+git clone git@github.com:justinmk/vim-sneak.git
+git clone git@github.com:tpope/vim-surround.git
+git clone git@github.com:tpope/vim-surround.git
+git clone git@github.com:kana/vim-textobj-user.git
+git clone git@github.com:kana/vim-textobj-entire.git
+
