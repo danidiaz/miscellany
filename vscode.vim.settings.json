@@ -25,7 +25,15 @@
         "before": ["<Leader>","R"],
         "commands": ["references-view.findReferences"],
         "when" : ["editorHasReferenceProvider"]
-        }
+        },
+        {
+        "before": ["<Leader>","b"],
+        "commands": ["bookmarks.list"]
+        },
+        {
+        "before": ["<Leader>","B"],
+        "commands": ["bookmarks.listFromAllFiles"]
+        }    
     ],
     "vim.leader": ","
 }
