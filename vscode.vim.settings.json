@@ -27,11 +27,11 @@
         "when" : ["editorHasReferenceProvider"]
         },
         {
-        "before": ["<Leader>","b"],
+        "before": ["<Leader>","m"],
         "commands": ["bookmarks.list"]
         },
         {
-        "before": ["<Leader>","B"],
+        "before": ["<Leader>","M"],
         "commands": ["bookmarks.listFromAllFiles"]
         }    
     ],
