@@ -2,5 +2,6 @@
 - Bookmarks https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
 - GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 - Haskell https://marketplace.visualstudio.com/items?itemName=haskell.haskell 
+- Haskell Spotlight https://marketplace.visualstudio.com/items?itemName=visortelle.haskell-spotlight
 - Nix https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix 
 - Nix environment selector https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector
