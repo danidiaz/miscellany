@@ -1,7 +1,15 @@
-- Remote-WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- Vim
 - Bookmarks https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
 - GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 - Haskell https://marketplace.visualstudio.com/items?itemName=haskell.haskell 
 - Haskell Spotlight https://marketplace.visualstudio.com/items?itemName=visortelle.haskell-spotlight
 - Nix https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix 
 - Nix environment selector https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector
+
+For Windows: 
+
+- Remote-WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+
+For Mac:
+
+- Quit Control for VSCode https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode  
