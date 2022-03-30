@@ -5,6 +5,7 @@
 - Haskell Spotlight https://marketplace.visualstudio.com/items?itemName=visortelle.haskell-spotlight
 - Nix https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix 
 - Nix environment selector https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector
+- Terraform https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
 
 For Windows: 
 
