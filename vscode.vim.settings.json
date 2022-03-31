@@ -41,7 +41,7 @@
         "commands": ["workbench.action.showCommands"]
         },    
         {
-        "before": ["<Leader>","p"],
+        "before": ["<Leader>","s"],
         "commands": ["workbench.action.quickOpen"]
         }    
     ],
