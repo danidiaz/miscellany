@@ -1,4 +1,6 @@
 {
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "haskell.serverExecutablePath": "haskell-language-server",
     "vim.handleKeys": { 
             "<C-h>": false,
             "<C-t>": false,
@@ -24,7 +26,7 @@
         {
         "before": ["<Leader>","R"],
         "commands": ["references-view.findReferences"],
-        "when" : ["editorHasReferenceProvider"]
+        "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
         },
         {
         "before": ["<Leader>","m"],
@@ -33,7 +35,16 @@
         {
         "before": ["<Leader>","M"],
         "commands": ["bookmarks.listFromAllFiles"]
+        },    
+        {
+        "before": ["<Leader>","a"],
+        "commands": ["workbench.action.showCommands"]
+        },    
+        {
+        "before": ["<Leader>","p"],
+        "commands": ["workbench.action.quickOpen"]
         }    
     ],
-    "vim.leader": ","
+    "vim.leader": ",",
+    "editor.fontSize": 18
 }
