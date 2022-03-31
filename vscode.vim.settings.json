@@ -42,6 +42,14 @@
         },    
         {
         "before": ["<Leader>","s"],
+        "commands": ["workbench.action.gotoSymbol"]
+        },    
+        {
+        "before": ["<Leader>","d"],
+        "commands": ["workbench.action.showAllSymbols"]
+        },    
+        {
+        "before": ["<Leader>","f"],
         "commands": ["workbench.action.quickOpen"]
         }    
     ],
