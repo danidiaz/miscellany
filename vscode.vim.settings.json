@@ -51,7 +51,12 @@
         {
         "before": ["<Leader>","f"],
         "commands": ["workbench.action.quickOpen"]
-        }    
+        },    
+        {
+        "before": ["<Leader>","c"],
+        "commands": ["references-view.showCallHierarchy"],
+        "when" : ["editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+        }
     ],
     "vim.leader": ",",
     "editor.fontSize": 18
