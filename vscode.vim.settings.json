@@ -29,11 +29,11 @@
         "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
         },
         {
-        "before": ["<Leader>","m"],
+        "before": ["<Leader>","b"],
         "commands": ["bookmarks.list"]
         },
         {
-        "before": ["<Leader>","M"],
+        "before": ["<Leader>","B"],
         "commands": ["bookmarks.listFromAllFiles"]
         },    
         {
@@ -49,14 +49,22 @@
         "commands": ["workbench.action.showAllSymbols"]
         },    
         {
+        "before": ["<Leader>","d"],
+        "commands": ["editor.action.peekDefinition"],
+        "when": ["editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+        },    
+        {
         "before": ["<Leader>","f"],
         "commands": ["workbench.action.quickOpen"]
         },    
         {
-        "before": ["<Leader>","c"],
-        "commands": ["references-view.showCallHierarchy"],
-        "when" : ["editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
-        }
+        "before": ["<Leader>","t"],
+        "commands": ["editor.action.peekTypeDefinition"]
+        },    
+        {
+        "before": ["<Leader>","T"],
+        "commands": ["editor.action.goToTypeDefinition"]
+        },    
     ],
     "vim.leader": ",",
     "editor.fontSize": 18
