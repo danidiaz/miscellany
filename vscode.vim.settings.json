@@ -45,7 +45,7 @@
         "commands": ["workbench.action.gotoSymbol"]
         },    
         {
-        "before": ["<Leader>","d"],
+        "before": ["<Leader>","S"],
         "commands": ["workbench.action.showAllSymbols"]
         },    
         {
