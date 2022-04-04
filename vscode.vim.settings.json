@@ -19,6 +19,10 @@
         "commands": ["editor.action.marker.nextInFiles"]
         },
         {
+            "before": ["<Backspace>"],
+            "commands": ["bookmarks.listFromAllFiles"]
+        },
+        {
         "before": ["<Leader>","r"],
         "commands": ["editor.action.goToReferences"],
         "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
