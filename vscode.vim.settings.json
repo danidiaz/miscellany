@@ -19,8 +19,8 @@
         "commands": ["editor.action.marker.nextInFiles"]
         },
         {
-            "before": ["<Backspace>"],
-            "commands": ["bookmarks.listFromAllFiles"]
+        "before": ["<Backspace>"],
+        "commands": ["bookmarks.listFromAllFiles"]
         },
         {
         "before": ["<Leader>","r"],
@@ -31,6 +31,10 @@
         "before": ["<Leader>","R"],
         "commands": ["references-view.findReferences"],
         "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+        },
+        {
+        "before": ["<Leader>","c"],
+        "commands": ["references-view.showCallHierarchy"]
         },
         {
         "before": ["<Leader>","b"],
