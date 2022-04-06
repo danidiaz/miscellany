@@ -76,7 +76,7 @@
             },    
             {
             "before": ["<Leader>","<Leader>"],
-            "commands": ["workbench.action.quickOpen"]
+            "commands": ["workbench.action.showCommands"]
             },    
             {
             "before": ["<Leader>","w"],
