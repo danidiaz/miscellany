@@ -11,68 +11,86 @@
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
         {
-        "before": ["<C-q>"],
-        "commands": ["editor.action.showHover"]
-        },
-        {
-        "before": ["<Space>"],
-        "commands": ["editor.action.marker.nextInFiles"]
-        },
-        {
-        "before": ["<Backspace>"],
-        "commands": ["bookmarks.listFromAllFiles"]
-        },
-        {
-        "before": ["<Leader>","r"],
-        "commands": ["editor.action.goToReferences"],
-        "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
-        },
-        {
-        "before": ["<Leader>","R"],
-        "commands": ["references-view.findReferences"],
-        "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
-        },
-        {
-        "before": ["<Leader>","c"],
-        "commands": ["references-view.showCallHierarchy"]
-        },
-        {
-        "before": ["<Leader>","b"],
-        "commands": ["bookmarks.list"]
-        },
-        {
-        "before": ["<Leader>","B"],
-        "commands": ["bookmarks.listFromAllFiles"]
-        },    
-        {
-        "before": ["<Leader>","a"],
-        "commands": ["workbench.action.showCommands"]
-        },    
-        {
-        "before": ["<Leader>","s"],
-        "commands": ["workbench.action.gotoSymbol"]
-        },    
-        {
-        "before": ["<Leader>","S"],
-        "commands": ["workbench.action.showAllSymbols"]
-        },    
-        {
-        "before": ["<Leader>","d"],
-        "commands": ["editor.action.peekDefinition"],
-        "when": ["editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
-        },    
-        {
-        "before": ["<Leader>","f"],
-        "commands": ["workbench.action.quickOpen"]
-        },    
-        {
-        "before": ["<Leader>","t"],
-        "commands": ["editor.action.peekTypeDefinition"]
-        },    
-        {
-        "before": ["<Leader>","T"],
-        "commands": ["editor.action.goToTypeDefinition"]
-        },    
+            "before": ["<C-q>"],
+            "commands": ["editor.action.showHover"]
+            },
+            {
+            "before": ["<Space>"],
+            "commands": ["editor.action.marker.nextInFiles"]
+            },
+            {
+            "before": ["<Backspace>"],
+            "commands": ["bookmarks.listFromAllFiles"]
+            },
+            {
+            "before": ["<Leader>","r"],
+            "commands": ["editor.action.goToReferences"],
+            "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },
+            {
+            "before": ["<Leader>","R"],
+            "commands": ["references-view.findReferences"],
+            "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },
+            {
+            "before": ["<Leader>","c"],
+            "commands": ["references-view.showCallHierarchy"]
+            },
+            {
+            "before": ["<Leader>","b"],
+            "commands": ["bookmarks.list"]
+            },
+            {
+            "before": ["<Leader>","B"],
+            "commands": ["bookmarks.listFromAllFiles"]
+            },    
+            {
+            "before": ["<Leader>","a"],
+            "commands": ["workbench.action.showCommands"]
+            },    
+            {
+            "before": ["<Leader>","s"],
+            "commands": ["workbench.action.gotoSymbol"]
+            },    
+            {
+            "before": ["<Leader>","S"],
+            "commands": ["workbench.action.showAllSymbols"]
+            },    
+            {
+            "before": ["<Leader>","d"],
+            "commands": ["editor.action.peekDefinition"],
+            "when": ["editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },    
+            {
+            "before": ["<Leader>","f"],
+            "commands": ["workbench.action.quickOpen"]
+            },    
+            {
+            "before": ["<Leader>","F"],
+            "commands": ["workbench.action.findInFiles"]
+            },    
+            {
+            "before": ["<Leader>","<Space>"],
+            "commands": ["workbench.action.quickOpen"],
+            "when": ["editorTextFocus"]
+            },    
+            {
+            "before": ["<Leader>","<Leader>"],
+            "commands": ["workbench.action.quickOpen"]
+            },    
+            {
+            "before": ["<Leader>","w"],
+            "commands": ["workbench.action.focusSideBar"],
+            "when": ["editorTextFocus"]
+            },    
+            {
+            "before": ["<Leader>","t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+            },    
+            {
+            "before": ["<Leader>","T"],
+            "commands": ["editor.action.goToTypeDefinition"]
+            }    
     ],
     "vim.leader": ",",
     "editor.fontSize": 18
