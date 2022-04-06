@@ -10,7 +10,7 @@
     "vim.sneak": true,
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
-        {
+            {
             "before": ["<C-q>"],
             "commands": ["editor.action.showHover"]
             },
