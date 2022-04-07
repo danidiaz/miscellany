@@ -10,13 +10,17 @@
     "vim.sneak": true,
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
-            {
+        {
             "before": ["<C-q>"],
             "commands": ["editor.action.showHover"]
             },
             {
             "before": ["<Space>"],
             "commands": ["editor.action.marker.nextInFiles"]
+            },
+            {
+            "before": ["<S-Backspace>"],
+            "commands": ["bookmarks.list"]
             },
             {
             "before": ["<Backspace>"],
@@ -76,7 +80,7 @@
             },    
             {
             "before": ["<Leader>","<Leader>"],
-            "commands": ["workbench.action.showCommands"]
+            "commands": ["workbench.action.showCommands"],
             },    
             {
             "before": ["<Leader>","w"],
@@ -90,7 +94,11 @@
             {
             "before": ["<Leader>","T"],
             "commands": ["editor.action.goToTypeDefinition"]
-            }    
+            },    
+            {
+            "before": ["<Leader>","e"],
+            "commands": ["workbench.files.action.focusOpenEditorsView"]
+            }
     ],
     "vim.leader": ",",
     "editor.fontSize": 18
