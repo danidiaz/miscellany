@@ -15,3 +15,7 @@ For Windows:
 For Mac:
 
 - Quit Control for VSCode https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode  
+
+Links:
+
+- [VSCode: how to omit placeholders on function name completion?](https://discourse.haskell.org/t/vscode-how-to-omit-placeholders-on-function-name-completion/4390)
