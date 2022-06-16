@@ -17,7 +17,7 @@
     ; co = checkout
     c = commit
     ca = commit --all
-    b = branch -vv
+    b = branch --show-current
     ba = branch -vv --all
     ds = diff --staged
     l = log --graph --oneline --decorate
