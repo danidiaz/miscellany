@@ -28,6 +28,7 @@
     laf = log --graph --oneline --decorate --summary --all --follow 
     s = status -s -b
     st = status -s -b --untracked-files=no
+    at = add --update
     u = diff --name-only --diff-filter=U
     mt = mergetool
     dt = difftool
