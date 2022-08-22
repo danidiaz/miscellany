@@ -7,6 +7,8 @@
 - Nix environment selector https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector
 - Terraform https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
 - eslint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+- PostCSS Language Support
+
 
 For Windows: 
 

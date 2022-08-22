@@ -98,6 +98,10 @@
             {
             "before": ["<Leader>","e"],
             "commands": ["workbench.files.action.focusOpenEditorsView"]
+            },
+            {
+            "before": ["<Leader>","m"],
+            "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
             }
     ],
     "vim.leader": ",",
