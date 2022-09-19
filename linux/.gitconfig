@@ -29,6 +29,10 @@
     s = status -s -b
     st = status -s -b --untracked-files=no
     at = add --update
+    atz = !"git add -- $(git ls-files -m | fzf --multi)"
     u = diff --name-only --diff-filter=U
+    m = merge-base origin/master HEAD
     mt = mergetool
     dt = difftool
+    rz = !"git restore -- $(git ls-files -m | fzf --multi)" 
+
