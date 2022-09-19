@@ -8,7 +8,7 @@
 - Terraform https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
 - eslint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 - PostCSS Language Support
-
+- Live Server https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 For Windows: 
 
