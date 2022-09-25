@@ -20,6 +20,8 @@
     b = branch --show-current
     ba = branch -vv --all
     ds = diff --staged
+    ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
+    dg = !"git diff $(git merge-base origin/master HEAD)"
     l = log --graph --oneline --decorate
     la = log --graph --oneline --decorate --all
     ; This for following renames to a single file.
@@ -29,11 +31,13 @@
     s = status -s -b
     st = status -s -b --untracked-files=no
     at = add --update
-    atz = !"git add -- $(git ls-files -m | fzf --multi)"
+    atz = !"git add -- $(git ls-files --modified | fzf --multi)"
+    az = !"git add -- $(git ls-files --others | fzf --multi)"
     u = diff --name-only --diff-filter=U
     m = merge-base origin/master HEAD
     mt = mergetool
     dt = difftool
     rz = !"git restore -- $(git ls-files -m | fzf --multi)" 
     g = !"git rebase --interactive $(git merge-base origin/master HEAD)"
+
 
