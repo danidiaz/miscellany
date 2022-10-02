@@ -102,6 +102,10 @@
             {
             "before": ["<Leader>","m"],
             "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+            },
+            {
+            "before": ["<Leader>","n"],
+            "commands": ["editor.action.rename"]
             }
     ],
     "vim.leader": ",",
