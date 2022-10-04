@@ -106,6 +106,10 @@
             {
             "before": ["<Leader>","n"],
             "commands": ["editor.action.rename"]
+            },
+            {
+            "before": ["<Leader>","v"],
+            "commands": ["workbench.action.openView"]
             }
     ],
     "vim.leader": ",",
