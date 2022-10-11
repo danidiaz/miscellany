@@ -42,6 +42,6 @@
     eg = !"git rebase --interactive $(git merge-base origin/master HEAD)"
     fm = fetch origin master
     em = rebase origin/master
-    ps = !"git push --set-upstream origin $(git branch --show-current)"
+    ; https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushautoSetupRemote
     
 
