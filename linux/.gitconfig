@@ -40,8 +40,8 @@
     rz = !"git restore -- $(git ls-files -m | fzf --multi)" 
     rsz = !"git restore --staged -- $(git diff --name-only --staged | fzf --multi)"
     eg = !"git rebase --interactive $(git merge-base origin/master HEAD)"
-    fom = fetch origin master
-    eom = rebase origin/master
-    pso = !"git push --set-upstream origin $(git branch --show-current)"
+    fm = fetch origin master
+    em = rebase origin/master
+    ps = !"git push --set-upstream origin $(git branch --show-current)"
     
 
