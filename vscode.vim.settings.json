@@ -110,7 +110,11 @@
             {
             "before": ["<Leader>","v"],
             "commands": ["workbench.action.openView"]
-            }
+            },
+            {
+            "before": ["<Leader>","o"],
+            "commands": ["outline.focus"]
+            },
     ],
     "vim.leader": ",",
     "editor.fontSize": 18
