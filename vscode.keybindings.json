@@ -1,7 +1,6 @@
-// Place your key bindings in this file to override the defaults
 [
     {
-        "key": "up",
+        "key": "alt+l",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
@@ -11,7 +10,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+down",
+        "key": "alt+j",
         "command": "search.action.focusSearchList",
         "when": "hasSearchResult && searchViewletFocus"
     }
