@@ -4,7 +4,9 @@
     "vim.handleKeys": { 
             "<C-h>": false,
             "<C-t>": false,
-            "<C-b>": false 
+            "<C-b>": false,
+            "<C-j>": false,
+            "<C-k>": false
         },
     "vim.highlightedyank.enable": true,
     "vim.sneak": true,
