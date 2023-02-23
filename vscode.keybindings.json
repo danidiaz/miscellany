@@ -1,6 +1,6 @@
 [
     {
-        "key": "alt+l",
+        "key": "alt+a",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
