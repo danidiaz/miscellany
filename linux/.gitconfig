@@ -23,6 +23,8 @@
     ds = diff --staged
     ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
     dg = !"git diff $(git merge-base origin/master HEAD)"
+    dz = !"git diff $(git ls-files --modified | fzf --multi)"
+    dsz = !"git diff --staged $(git ls-files --modified | fzf --multi)"
     l = log --graph --oneline --decorate
     la = log --graph --oneline --decorate --all
     ; This for following renames to a single file.
