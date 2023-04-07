@@ -9,6 +9,8 @@
 - eslint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 - PostCSS Language Support
 - Live Server https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- Error Lens https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
+- Axe Accessibility Linter https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter
 
 For Windows: 
 
