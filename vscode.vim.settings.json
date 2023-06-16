@@ -86,9 +86,9 @@
             },    
             {
             "before": ["<Leader>","w"],
-            "commands": ["workbench.action.focusSideBar"],
+            "commands": ["editor.emmet.action.wrapWithAbbreviation"],
             "when": ["editorTextFocus"]
-            },    
+            },     
             {
             "before": ["<Leader>","t"],
             "commands": ["editor.action.peekTypeDefinition"]
