@@ -1,2 +1,5 @@
+-- https://pgdash.io/blog/postgres-psql-tips-tricks.html
+-- https://www.postgresql.org/docs/current/app-psql.html
+-- https://gist.github.com/jaytaylor/e5aa89c8f3aaab3f576f
 \pset expanded on
 \pset format wrapped
