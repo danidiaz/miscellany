@@ -90,6 +90,11 @@
             "when": ["editorTextFocus"]
             },     
             {
+            "before": ["<Leader>","%"],
+            "commands": ["editor.emmet.action.matchTag"],
+            "when": ["editorTextFocus"]
+            },         
+            {
             "before": ["<Leader>","t"],
             "commands": ["editor.action.peekTypeDefinition"]
             },    
