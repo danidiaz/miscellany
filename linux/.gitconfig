@@ -23,7 +23,7 @@
     ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
     dg = !"git diff $(git merge-base origin/master HEAD)"
     dgn = !"git diff --name-only $(git merge-base origin/master HEAD)"
-    dgz = !"git diff origin/master -- $(git diff --name-only $(git merge-base origin/master HEAD) | fzf)"    dz = !"git diff $(git ls-files --modified | fzf --multi)"
+    dgz = !"git diff origin/master -- $(git dgn | fzf)"
     ds = diff --staged
     dsz = !"git diff --staged $(git ls-files --modified | fzf --multi)"
     l = log --graph --oneline --decorate
