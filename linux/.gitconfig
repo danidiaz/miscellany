@@ -20,10 +20,11 @@
     b = branch --show-current
     ba = branch -vv --all
     sz = !"git switch $(git branch --sort=-committerdate | grep '^[^*]' | fzf)"
-    ds = diff --staged
     ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
     dg = !"git diff $(git merge-base origin/master HEAD)"
-    dz = !"git diff $(git ls-files --modified | fzf --multi)"
+    dgn = !"git diff --name-only $(git merge-base origin/master HEAD)"
+    dgz = !"git diff origin/master -- $(git diff --name-only $(git merge-base origin/master HEAD) | fzf)"    dz = !"git diff $(git ls-files --modified | fzf --multi)"
+    ds = diff --staged
     dsz = !"git diff --staged $(git ls-files --modified | fzf --multi)"
     l = log --graph --oneline --decorate
     la = log --graph --oneline --decorate --all
