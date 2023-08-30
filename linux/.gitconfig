@@ -16,7 +16,7 @@
     ; try using switch instead
     ; co = checkout
     c = commit
-    ca = commit --all
+    ca = commit --amend
     b = branch --show-current
     ba = branch -vv --all
     sz = !"git switch $(git branch --sort=-committerdate | grep '^[^*]' | fzf)"
