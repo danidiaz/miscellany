@@ -24,7 +24,7 @@
     dz = !"git diff $(git ls-files --modified | fzf --multi)"    
     dg = !"git diff $(git merge-base master@{u} HEAD)"
     dgn = !"git diff --name-only $(git merge-base master@{u} HEAD)"
-    dgz = !"git diff origin/master -- $(git dgn | fzf)"
+    dgz = !"git diff $(git merge-base master@{u} HEAD) -- $(git dgn | fzf)"
     ds = diff --staged
     dsz = !"git diff --staged $(git ls-files --modified | fzf --multi)"
     l = log --graph --oneline --decorate
