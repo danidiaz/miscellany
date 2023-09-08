@@ -124,5 +124,9 @@
             },
     ],
     "vim.leader": ",",
-    "editor.fontSize": 18
+    "editor.fontSize": 18,
+    "haskell.plugin.ghcide-completions.config.snippetsOn": false,
+    "explorer.fileNesting.expand": false,
+    "explorer.sortOrder": "mixed",
+    "pgFormatter.noGrouping" : true
 }
