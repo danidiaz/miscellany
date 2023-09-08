@@ -10,7 +10,10 @@
 - PostCSS Language Support
 - Live Server https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 - Error Lens https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
-- Axe Accessibility Linter https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter
+- pgFormatter https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter
+- Tailwind https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+- Pretty TS errors https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors
+- Quit control https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode
 
 For Windows: 
 
