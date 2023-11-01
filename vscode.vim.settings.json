@@ -6,7 +6,8 @@
             "<C-t>": false,
             "<C-b>": false,
             "<C-j>": false,
-            "<C-k>": false
+            "<C-k>": false,
+            "<C-p>": false
         },
     "vim.highlightedyank.enable": true,
     "vim.sneak": true,
