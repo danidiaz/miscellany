@@ -11,6 +11,7 @@
     trustExitCode = false
     cmd = gvim -f -d -M -c 'set diffopt=internal,filler,closeoff,algorithm:patience,iwhiteall | :set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
+    ; TODO: find a way to detect the main branch to support both "master" for old repos and new-style "main"
     ; cp = cherry-pick
     ; cl = clone
     ; try using switch instead
