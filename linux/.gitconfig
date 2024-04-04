@@ -43,6 +43,7 @@
     mt = mergetool
     dt = difftool
     rz = !"git restore -- $(git ls-files -m | fzf --multi)" 
+    rp = !"git restore --patch -- $(git ls-files -m | fzf --multi)"
     rsz = !"git restore --staged -- $(git diff --name-only --staged | fzf --multi)"
     eg = !"git rebase --interactive $(git merge-base master@{u} HEAD)"
     fm = fetch origin master
