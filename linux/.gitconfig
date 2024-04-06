@@ -32,9 +32,9 @@
     sz = !"git switch $(git branch --sort=-committerdate | grep '^[^*]' | fzf)"
     ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
     dz = !"git diff $(git ls-files --modified | fzf --multi)"    
-    dg = !"git diff $(git merge-base master@{u} HEAD)"
-    dgn = !"git diff --name-only $(git merge-base master@{u} HEAD)"
-    dgz = !"git diff $(git merge-base master@{u} HEAD) -- $(git dgn | fzf)"
+    dg = !"git diff $(git merge-base main@{u} HEAD)"
+    dgn = !"git diff --name-only $(git merge-base main@{u} HEAD)"
+    dgz = !"git diff $(git merge-base main@{u} HEAD) -- $(git dgn | fzf)"
     ds = diff --staged
     dsz = !"git diff --staged $(git ls-files --modified | fzf --multi)"
     l = log --graph --oneline --decorate
@@ -50,15 +50,15 @@
     atp = !"git add --patch -- $(git ls-files --modified | fzf --multi)"
     az = !"git add -- $(git ls-files --others | fzf --multi)"
     u = diff --name-only --diff-filter=U
-    m = merge-base origin/master HEAD
+    m = merge-base origin/main HEAD
     mt = mergetool
     dt = difftool
     rz = !"git restore -- $(git ls-files -m | fzf --multi)" 
     rp = !"git restore --patch -- $(git ls-files -m | fzf --multi)"
     rsz = !"git restore --staged -- $(git diff --name-only --staged | fzf --multi)"
-    eg = !"git rebase --interactive $(git merge-base master@{u} HEAD)"
-    fm = fetch origin master
-    em = rebase master@{u}
+    eg = !"git rebase --interactive $(git merge-base main@{u} HEAD)"
+    fm = fetch origin main
+    em = rebase main@{u}
     ; https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushautoSetupRemote
     
 
