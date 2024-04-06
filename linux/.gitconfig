@@ -12,10 +12,19 @@
     cmd = gvim -f -d -M -c 'set diffopt=internal,filler,closeoff,algorithm:patience,iwhiteall | :set modifiable | :set write | :wincmd J' $MERGED $LOCAL $BASE $REMOTE
 [alias]
     ; TODO: find a way to identify the main branch to support both "master" for old repos and new-style "main"
+    ; Naming conventions
+    ;   r means restore
+    ;   e means rebase
+    ;   t means doing something only to already tracked files
+    ;   z means that we uses fzf to choose between options
+    ;   p means use of --patch, always combined with fzf
+    ;   g means doing something from the point current branch and main diverged
+    ; Meh aliases
     ; cp = cherry-pick
     ; cl = clone
     ; try using switch instead
     ; co = checkout
+    ; end meh aliases.
     c = commit
     ca = commit --amend
     b = branch --show-current
