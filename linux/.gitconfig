@@ -38,6 +38,7 @@
     st = status -s -b --untracked-files=no
     at = add --update
     atz = !"git add -- $(git ls-files --modified | fzf --multi)"
+    atp = !"git add --patch -- $(git ls-files --modified | fzf --multi)"
     az = !"git add -- $(git ls-files --others | fzf --multi)"
     u = diff --name-only --diff-filter=U
     m = merge-base origin/master HEAD
