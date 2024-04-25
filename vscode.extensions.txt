@@ -14,6 +14,8 @@
 - Tailwind https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
 - Pretty TS errors https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors
 - Quit control https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode
+- Region folder https://marketplace.visualstudio.com/items?itemName=maptz.regionfolder
+  (see also https://code.visualstudio.com/api/language-extensions/language-configuration-guide)
 
 For Windows: 
 
