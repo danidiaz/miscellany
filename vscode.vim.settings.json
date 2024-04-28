@@ -1,6 +1,13 @@
 {
     "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
     "haskell.serverExecutablePath": "haskell-language-server",
+    // begin only for Windows
+    // https://github.com/microsoft/vscode/issues/100292#issuecomment-644793471
+    "terminal.integrated.commandsToSkipShell": [
+     "-workbench.action.quickOpen",
+     "-workbench.action.terminal.focusFind"
+    ],
+    // end only for Windows
     "vim.handleKeys": { 
             "<C-h>": false,
             "<C-t>": false,
