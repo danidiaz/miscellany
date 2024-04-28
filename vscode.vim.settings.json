@@ -7,6 +7,8 @@
      "-workbench.action.quickOpen",
      "-workbench.action.terminal.focusFind"
     ],
+    // https://stackoverflow.com/a/61877822/1364288
+    "terminal.integrated.allowChords": false,
     // end only for Windows
     "vim.handleKeys": { 
             "<C-h>": false,
