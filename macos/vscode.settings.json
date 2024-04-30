@@ -1,0 +1,148 @@
+{
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "haskell.serverExecutablePath": "haskell-language-server",
+    "haskell.completionSnippetsOn": false,
+    "maptz.regionfolder": {
+        "[haskell]": {                                      
+            "foldEnd": "-- #endregion",                 
+            "foldEndRegex": "--[\\s]*#endregion",      
+            "foldStart": "-- #region [NAME]",           
+            "foldStartRegex": "--[\\s]*#region[\\s]*(.*)",  
+            "disableFolding": false 
+        }
+    },
+    "vim.handleKeys": { 
+            "<C-h>": false,
+            "<C-t>": false,
+            "<C-b>": false,
+            "<C-j>": false,
+            "<C-k>": false
+        },
+    "vim.highlightedyank.enable": true,
+    "vim.sneak": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+            {
+            "before": ["<C-q>"],
+            "commands": ["editor.action.showHover"]
+            },
+            {
+            "before": ["<Space>"],
+            "commands": ["editor.action.marker.nextInFiles"]
+            },
+            {
+            "before": ["<S-Backspace>"],
+            "commands": ["bookmarks.list"]
+            },
+            {
+            "before": ["<Backspace>"],
+            "commands": ["bookmarks.listFromAllFiles"]
+            },
+            {
+            "before": ["<Leader>","r"],
+            "commands": ["editor.action.goToReferences"],
+            "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },
+            {
+            "before": ["<Leader>","R"],
+            "commands": ["references-view.findReferences"],
+            "when" : ["editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },
+            {
+            "before": ["<Leader>","c"],
+            "commands": ["references-view.showCallHierarchy"]
+            },
+            {
+            "before": ["<Leader>","b"],
+            "commands": ["bookmarks.list"]
+            },
+            {
+            "before": ["<Leader>","B"],
+            "commands": ["bookmarks.listFromAllFiles"]
+            },    
+            {
+            "before": ["<Leader>","a"],
+            "commands": ["workbench.action.showCommands"]
+            },    
+            {
+            "before": ["<Leader>","s"],
+            "commands": ["workbench.action.gotoSymbol"]
+            },    
+            {
+            "before": ["<Leader>","S"],
+            "commands": ["workbench.action.showAllSymbols"]
+            },    
+            {
+            "before": ["<Leader>","d"],
+            "commands": ["editor.action.peekDefinition"],
+            "when": ["editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"]
+            },    
+            {
+            "before": ["<Leader>","f"],
+            "commands": ["workbench.action.quickOpen"]
+            },    
+            {
+            "before": ["<Leader>","F"],
+            "commands": ["workbench.action.findInFiles"]
+            },    
+            {
+            "before": ["<Leader>","<Space>"],
+            "commands": ["workbench.action.quickOpen"],
+            "when": ["editorTextFocus"]
+            },    
+            {
+            "before": ["<Leader>","<Leader>"],
+            "commands": ["workbench.action.showCommands"],
+            },    
+            {
+            "before": ["<Leader>","w"],
+            "commands": ["editor.emmet.action.wrapWithAbbreviation"],
+            "when": ["editorTextFocus"]
+            },    
+            {
+            "before": ["<Leader>","%"],
+            "commands": ["editor.emmet.action.matchTag"],
+            "when": ["editorTextFocus"]
+            },    
+            {
+            "before": ["<Leader>","t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+            },    
+            {
+            "before": ["<Leader>","T"],
+            "commands": ["editor.action.goToTypeDefinition"]
+            },    
+            {
+            "before": ["<Leader>","e"],
+            "commands": ["workbench.files.action.focusOpenEditorsView"]
+            },
+            {
+            "before": ["<Leader>","m"],
+            "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+            },
+            {
+            "before": ["<Leader>","n"],
+            "commands": ["editor.action.rename"]
+            },
+            {
+            "before": ["<Leader>","v"],
+            "commands": ["workbench.action.openView"]
+            },
+            {
+            "before": ["<Leader>","o"],
+            "commands": ["outline.focus"]
+            },
+            
+    ],
+    "vim.leader": ",",
+    "editor.fontSize": 18,
+    "haskell.plugin.ghcide-completions.config.snippetsOn": false,
+    "explorer.fileNesting.expand": false,
+    "explorer.sortOrder": "mixed",
+    "pgFormatter.noGrouping": true,
+    "terminal.integrated.fontSize": 18,
+    "workbench.sideBar.location": "right",
+    "workbench.tree.enableStickyScroll": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.minimap.enabled": false
+}
