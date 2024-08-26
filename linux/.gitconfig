@@ -30,7 +30,7 @@
     b = branch --show-current
     ba = branch -vv --all
     bz = !"git branch --sort=-committerdate | grep '^[^*]' | fzf"
-    sz = !"git switch $(git branch --sort=-committerdate | grep '^[^*]' | fzf)"
+    sz = !"git switch $(git bz)"
     ; https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
     dz = !"git diff $(git ls-files --modified | fzf --multi)"    
     dg = !"git diff $(git merge-base main@{u} HEAD)"
