@@ -132,6 +132,11 @@
             "before": ["<Leader>","o"],
             "commands": ["outline.focus"]
             },
+            // https://github.com/AnthonyAsDev/VSCodeVimSettings/tree/master
+            {
+            "before": ["<Leader>","g","c"],
+            "commands": ["gitlens.showQuickCommitFileDetails"]
+            },
     ],
     "vim.leader": ",",
     "editor.fontSize": 18,
