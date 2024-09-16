@@ -134,9 +134,25 @@
             },
             // https://github.com/AnthonyAsDev/VSCodeVimSettings/tree/master
             {
+            "before": ["<Leader>","g","b"],
+            "commands": ["gitlens.toggleFileBlame"]
+            },
+            {
             "before": ["<Leader>","g","c"],
             "commands": ["gitlens.showQuickCommitFileDetails"]
             },
+            {
+            "before": ["<Leader>","g","h"],
+            "commands": ["gitlens.showQuickFileHistory"]
+            },
+            {
+            "before": ["<Leader>","g","s"],
+            "commands": ["gitlens.showQuickRepoStatus"]
+            },
+            {
+            "before": ["<Leader>","g",","],
+            "commands": ["gitlens.diffWithPrevious"]
+            }
     ],
     "vim.leader": ",",
     "editor.fontSize": 18,
