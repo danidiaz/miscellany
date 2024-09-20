@@ -175,3 +175,11 @@ endif
 if has("win32") || has("win64")
    set directory=$TMP
 end
+
+" some emojis
+ab :checkmark: ✅                                                                                                                                    
+ab :thinking: 🤔
+
+" https://stackoverflow.com/questions/46570644/disable-background-transparency-in-neovim
+highlight Normal ctermbg=Black
+highlight NonText ctermbg=Black
