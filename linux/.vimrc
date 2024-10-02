@@ -176,9 +176,13 @@ if has("win32") || has("win64")
    set directory=$TMP
 end
 
-" some emojis
-ab :checkmark: ✅                                                                                                                                    
+" local modifications
+ab :checkmark: ✅ 
 ab :thinking: 🤔
+ab :flushed: 😳
+ab :astonished: 😲
+ab :exploding: 🤯
+ab :cyclone: 🌀
 
 if &term =~ "xterm\\|rxvt"
   " https://stackoverflow.com/a/25327689
