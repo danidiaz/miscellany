@@ -4,9 +4,10 @@
     ; this only works well with the windows explorer because it has its own class (?)
     ; but for other types of apps is not precise enough. 
     activeClass := WinGetClass("A")
+    processName := WinGetProcessName("A")
     WinMoveBottom("A")
     ; https://www.autohotkey.com/boards/viewtopic.php?t=121498
-    WinActivate('ahk_class ' activeClass)
+    WinActivate('ahk_class ' activeClass ' ahk_exe ' processName)
     return
 }
 
