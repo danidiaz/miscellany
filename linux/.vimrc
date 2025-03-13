@@ -103,6 +103,7 @@ colorscheme desert
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
 " nnoremap <Leader>l :l %:p:h<CR>:pwd<CR>
 
+noremap <script> <silent> <unique> <Leader>a "*y
 noremap <script> <silent> <unique> <Leader>y "*y
 noremap <script> <silent> <unique> <Leader>Y :%y*<CR>
 noremap <script> <silent> <unique> <Leader>p "*p
