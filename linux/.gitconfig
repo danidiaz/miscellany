@@ -5,7 +5,7 @@
     tool = gvimdiff3
 ; https://stackoverflow.com/questions/1251681/git-mergetool-generates-unwanted-orig-files
 [mergetool]
-	keepBackup = false
+        keepBackup = false
 ; http://vimdoc.sourceforge.net/htmldoc/diff.html
 [mergetool "gvimdiff3"]
     trustExitCode = false
@@ -62,4 +62,9 @@
     em = rebase main@{u}
     ; https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushautoSetupRemote
     
+[init]
+    defaultBranch = main
+[user]
+    name = Daniel Díaz
+    email = diaz_carrete@yahoo.com
 

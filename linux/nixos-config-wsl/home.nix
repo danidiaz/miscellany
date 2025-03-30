@@ -8,6 +8,16 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
+  home.file.".config/git/config" = {
+    source = ../.gitconfig;
+    # recursive = true;
+  };
+
+  home.file.".config/tmux/tmux.conf" = {
+    source = ../.tmux.conf;
+    # recursive = true;
+  };
+
   # link all files in `./scripts` to `~/.config/i3/scripts`
   # home.file.".config/i3/scripts" = {
   #   source = ./scripts;
@@ -76,12 +86,12 @@
     usbutils # lsusb
   ];
 
-  # basic configuration of git, please change to your own
-  programs.git = {
-    enable = true;
-    userName = "Daniel Díaz";
-    userEmail = "diaz_carrete@yahoo.com";
-  };
+  # # basic configuration of git, please change to your own
+  # programs.git = {
+  #   enable = true;
+  #   userName = "Daniel Díaz";
+  #   userEmail = "diaz_carrete@yahoo.com";
+  # };
 
   programs.bash = {
     enable = true;
@@ -99,53 +109,53 @@
     # };
   };
 
-  programs.tmux = {
-    enable = true;
-    extraConfig = 
-      ''
-        # https://superuser.com/a/1650961/185034
-        # https://stackoverflow.com/a/64901851
-        set -g default-terminal "xterm-256color"
-        # https://gitlab.com/gnachman/iterm2/-/wikis/tmux-Integration-Best-Practices
-        set-option -g allow-passthrough on
-        unbind C-b
-        set -g prefix C-j
-        # http://superuser.com/questions/552744/issues-reconfiguring-send-prefix-for-tmux
-        bind-key C-j send-prefix
-        set-window-option -g mode-keys vi
-        # http://unix.stackexchange.com/questions/23138/esc-key-causes-a-small-delay-in-terminal-due-to-its-alt-behavior
-        set -s escape-time 0
-        # https://wiki.archlinux.org/index.php/tmux
-        # http://blog.sanctum.geek.nz/vi-mode-in-tmux/
-        # https://github.com/tmux/tmux/issues/754
-        # bind-key -T copy-mode-vi 'v' send-keys -X begin-selection
-        # bind-key -T copy-mode-vi 'y' send-keys -X copy-selection
-        # bind-key -T copy-mode-vi 'Space' send-keys -X halfpage-down
-        # bind-key -T copy-mode-vi 'Bspace' send-keys -X  halfpage-up
-        # bind | split-window -h
-        # bind - split-window -v
-        # unbind '"'
-        # unbind %
-        # Better use o and ; instead.
-        # bind h select-pane -L
-        bind j select-pane -D
-        bind k select-pane -U
-        # bind l select-pane -R
-        # bind -r H resize-pane -L 5
-        # bind -r J resize-pane -D 5
-        # bind -r K resize-pane -U 5
-        # bind -r L resize-pane -R 5
-        # bind-key M-p paste-buffer
-        # bind-key M-0 select-pane -t 0
-        # bind-key M-6 select-pane -t 1
-        # bind-key M-7 select-pane -t 2
-        # bind-key M-8 select-pane -t 3
-        # bind-key M-9 select-pane -t 4
-        # experiment for quick switching
-        # http://superuser.com/questions/484427/tmux-what-does-bind-key-r-mean
-        bind-key -r o select-pane -t :.+
-      '';
-  };
+  # programs.tmux = {
+  #   enable = true;
+  #   extraConfig = 
+  #     ''
+  #       # https://superuser.com/a/1650961/185034
+  #       # https://stackoverflow.com/a/64901851
+  #       set -g default-terminal "xterm-256color"
+  #       # https://gitlab.com/gnachman/iterm2/-/wikis/tmux-Integration-Best-Practices
+  #       set-option -g allow-passthrough on
+  #       unbind C-b
+  #       set -g prefix C-j
+  #       # http://superuser.com/questions/552744/issues-reconfiguring-send-prefix-for-tmux
+  #       bind-key C-j send-prefix
+  #       set-window-option -g mode-keys vi
+  #       # http://unix.stackexchange.com/questions/23138/esc-key-causes-a-small-delay-in-terminal-due-to-its-alt-behavior
+  #       set -s escape-time 0
+  #       # https://wiki.archlinux.org/index.php/tmux
+  #       # http://blog.sanctum.geek.nz/vi-mode-in-tmux/
+  #       # https://github.com/tmux/tmux/issues/754
+  #       # bind-key -T copy-mode-vi 'v' send-keys -X begin-selection
+  #       # bind-key -T copy-mode-vi 'y' send-keys -X copy-selection
+  #       # bind-key -T copy-mode-vi 'Space' send-keys -X halfpage-down
+  #       # bind-key -T copy-mode-vi 'Bspace' send-keys -X  halfpage-up
+  #       # bind | split-window -h
+  #       # bind - split-window -v
+  #       # unbind '"'
+  #       # unbind %
+  #       # Better use o and ; instead.
+  #       # bind h select-pane -L
+  #       bind j select-pane -D
+  #       bind k select-pane -U
+  #       # bind l select-pane -R
+  #       # bind -r H resize-pane -L 5
+  #       # bind -r J resize-pane -D 5
+  #       # bind -r K resize-pane -U 5
+  #       # bind -r L resize-pane -R 5
+  #       # bind-key M-p paste-buffer
+  #       # bind-key M-0 select-pane -t 0
+  #       # bind-key M-6 select-pane -t 1
+  #       # bind-key M-7 select-pane -t 2
+  #       # bind-key M-8 select-pane -t 3
+  #       # bind-key M-9 select-pane -t 4
+  #       # experiment for quick switching
+  #       # http://superuser.com/questions/484427/tmux-what-does-bind-key-r-mean
+  #       bind-key -r o select-pane -t :.+
+  #     '';
+  # };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
