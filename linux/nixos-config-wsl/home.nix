@@ -1,13 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  # NOTE(danididaz) I've commented this part because the user name is already mentioned
+  # NOTE(danidiaz) Are these redundant?
+  # After all, the user name is already mentioned
   # in flake.nix when invoking home-manager, in home-manager.users.nixos.
-  # so maybe this bit here is redundant?
-  #
-  # TODO please change the username & home directory to your own
-  # home.username = "nixos";
-  # home.homeDirectory = "/home/nixos";
+  home.username = "nixos";
+  home.homeDirectory = "/home/nixos";
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
