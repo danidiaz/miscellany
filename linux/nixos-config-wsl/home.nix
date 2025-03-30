@@ -136,6 +136,9 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
+  # NOTE(danidiaz) 
+  # These are only needed for standalone, 
+  # See: https://discord.com/channels/568306982717751326/570351771336310804/1356010317632635132
   # Let home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  # programs.home-manager.enable = true;
 }
