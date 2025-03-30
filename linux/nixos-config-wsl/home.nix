@@ -1,11 +1,12 @@
 { config, pkgs, ... }:
 
 {
-  # NOTE(danidiaz) Are these redundant?
-  # After all, the user name is already mentioned
-  # in flake.nix when invoking home-manager, in home-manager.users.nixos.
-  home.username = "nixos";
-  home.homeDirectory = "/home/nixos";
+  # NOTE(danidiaz) 
+  # These are only needed for standalone, 
+  # as home manager's nixos module can grab those values from the nixos options set.
+  # See: https://discord.com/channels/568306982717751326/570351771336310804/1356010317632635132
+  # home.username = "nixos";
+  # home.homeDirectory = "/home/nixos";
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
