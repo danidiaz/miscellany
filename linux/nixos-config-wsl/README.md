@@ -18,7 +18,16 @@ of linking `/etc/nixos` to a git repo.
 
 # Links
 
+- [NixOS-WSL](https://github.com/nix-community/NixOS-WSL).
+
 - [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/)
+    
+    - This book is very good.
 
     - [Home Manager vs NixOS](https://nixos-and-flakes.thiscute.world/nixos-with-flakes/start-using-home-manager#home-manager-vs-nixos)
+
+- [home-manager](https://github.com/nix-community/home-manager)
+
+    - [Home Manager flake as a NixOS module](https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-nixos-module).
+
 
