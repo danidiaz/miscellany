@@ -12,6 +12,8 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
+  # NOTE(danidiaz) so it seems it's ok to refer to files in upper directories,
+  # as long as they're in the repo.
   home.file.".config/git/config" = {
     source = ../.gitconfig;
     # recursive = true;
@@ -19,6 +21,11 @@
 
   home.file.".config/tmux/tmux.conf" = {
     source = ../.tmux.conf;
+    # recursive = true;
+  };
+
+  home.file.".config/vim/vimrc" = {
+    source = ../.vimrc;
     # recursive = true;
   };
 

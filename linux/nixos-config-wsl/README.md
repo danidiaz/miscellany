@@ -4,6 +4,12 @@
   [here](https://nixos-and-flakes.thiscute.world/nixos-with-flakes/other-useful-tips#managing-the-configuration-with-git)
 of linking `/etc/nixos` to a git repo.
 
+  ```
+  git clone git@github.com:danidiaz/miscellany.git
+  sudo mv /etc/nixos /etc/nixos.bak
+  sudo ln -s ~/miscellany/linux/nixos-config-wsl/ /etc/nixos 
+  ```
+
 - I've also choose to create my git, tmux... config files using `home.file`,
   instead of using `programs.git`, `programs.tmux`... good idea? Bad?
 
@@ -11,5 +17,5 @@ of linking `/etc/nixos` to a git repo.
 
 - [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/)
 
-
+    - [Home Manager vs NixOS](https://nixos-and-flakes.thiscute.world/nixos-with-flakes/start-using-home-manager#home-manager-vs-nixos)
 
