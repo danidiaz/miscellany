@@ -1,5 +1,7 @@
 # nixos WSL
 
+- Using [NixOS-WSL](https://github.com/nix-community/NixOS-WSL).
+
 - I've chosen the approach described
   [here](https://nixos-and-flakes.thiscute.world/nixos-with-flakes/other-useful-tips#managing-the-configuration-with-git)
 of linking `/etc/nixos` to a git repo.
