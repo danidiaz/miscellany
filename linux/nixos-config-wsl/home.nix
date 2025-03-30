@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  # NOTE(danididaz) I've commented this part because the user name is already mentioned
+  # in flake.nix when invoking home-manager, in home-manager.users.nixos.
+  # so maybe this bit here is redundant?
+  #
   # TODO please change the username & home directory to your own
   # home.username = "nixos";
   # home.homeDirectory = "/home/nixos";
