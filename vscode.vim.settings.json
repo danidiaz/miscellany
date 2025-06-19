@@ -154,6 +154,10 @@
             "commands": ["gitlens.compareWorkingWith"]
             },        
             {
+            "before": ["<Leader>","g","p"],
+            "commands": ["gitlens.gitCommands"]
+            },        
+            {
             "before": ["<Leader>","g",","],
             "commands": ["gitlens.diffWithPrevious"]
             }
