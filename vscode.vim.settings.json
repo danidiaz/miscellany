@@ -150,6 +150,10 @@
             "commands": ["gitlens.showQuickRepoStatus"]
             },
             {
+            "before": ["<Leader>","g","w"],
+            "commands": ["gitlens.compareWorkingWith"]
+            },        
+            {
             "before": ["<Leader>","g",","],
             "commands": ["gitlens.diffWithPrevious"]
             }
