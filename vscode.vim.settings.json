@@ -162,8 +162,12 @@
             "commands": ["gitlens.diffWithPrevious"]
             },
             {
-            "before": ["<Leader>","l"],
+            "before": ["<Leader>","L"],
             "commands": ["bookmarks.toggleLabeled"]
+            },
+            {
+            "before": ["<Leader>","l"],
+            "commands": ["bookmarks.listFromAllFiles"]
             },
     ],
     "vim.leader": ",",
