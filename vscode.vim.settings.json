@@ -79,7 +79,7 @@
             },    
             {
             "before": ["<Leader>","f"],
-            "commands": ["workbench.action.quickOpen"]
+            "commands": [ "workbench.files.action.showActiveFileInExplorer" ]
             },    
             {
             "before": ["<Leader>","F"],
@@ -160,7 +160,11 @@
             {
             "before": ["<Leader>","g",","],
             "commands": ["gitlens.diffWithPrevious"]
-            }
+            },
+            {
+            "before": ["<Leader>","l"],
+            "commands": ["bookmarks.toggleLabeled"]
+            },
     ],
     "vim.leader": ",",
     "editor.fontSize": 18,
