@@ -169,6 +169,10 @@
             "before": ["<Leader>","l"],
             "commands": ["bookmarks.listFromAllFiles"]
             },
+            {
+            "before": ["<Leader>","u"],
+            "commands": ["gitlens.copyRemoteFileUrlToClipboard"]
+            },
     ],
     "vim.leader": ",",
     "editor.fontSize": 18,
