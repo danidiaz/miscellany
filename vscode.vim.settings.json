@@ -170,7 +170,7 @@
             "commands": ["bookmarks.listFromAllFiles"]
             },
             {
-            "before": ["<Leader>","u"],
+            "before": ["<Leader>","g", "u"],
             "commands": ["gitlens.copyRemoteFileUrlToClipboard"]
             },
     ],
