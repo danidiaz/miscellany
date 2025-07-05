@@ -1,3 +1,23 @@
+<^y::
+{
+    locator := "ahk_exe obs64.exe"
+    if not WinExist(locator) {
+        Run('"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\OBS Studio\OBS Studio (64bit).lnk"')
+    } else {
+        WinActivate(locator)
+    }
+}
+
+<^f::
+{
+    locator := "ahk_exe firefox.exe"
+    if not WinExist(locator) {
+        Run('"C:\Program Files\Mozilla Firefox\firefox.exe"')
+    } else {
+        WinActivate(locator)
+    }
+}
+
 <^h::
 {
     locator := "ahk_exe chrome.exe"
