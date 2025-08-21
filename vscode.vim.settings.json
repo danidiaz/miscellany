@@ -121,6 +121,10 @@
             "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
             },
             {
+            "before": ["<Leader>","."],
+            "commands": ["bookmarks.listFromAllFiles"]
+            },          
+            {
             "before": ["<Leader>","n"],
             "commands": ["editor.action.rename"]
             },
