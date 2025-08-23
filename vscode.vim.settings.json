@@ -87,7 +87,7 @@
             },    
             {
             "before": ["<Leader>","<Space>"],
-            "commands": ["workbench.action.quickOpen"],
+            "commands": ["editor.action.marker.prevInFiles"],
             "when": ["editorTextFocus"]
             },    
             {
