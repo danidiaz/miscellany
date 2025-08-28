@@ -93,17 +93,7 @@
             {
             "before": ["<Leader>","<Leader>"],
             "commands": ["workbench.action.showCommands"],
-            },    
-            {
-            "before": ["<Leader>","w"],
-            "commands": ["editor.emmet.action.wrapWithAbbreviation"],
-            "when": ["editorTextFocus"]
-            },     
-            {
-            "before": ["<Leader>","%"],
-            "commands": ["editor.emmet.action.matchTag"],
-            "when": ["editorTextFocus"]
-            },         
+            },        
             {
             "before": ["<Leader>","t"],
             "commands": ["editor.action.peekTypeDefinition"]
@@ -113,8 +103,14 @@
             "commands": ["editor.action.goToTypeDefinition"]
             },    
             {
-            "before": ["<Leader>","e"],
-            "commands": ["workbench.files.action.focusOpenEditorsView"]
+            "before": ["<Leader>","e","w"],
+            "commands": ["editor.emmet.action.wrapWithAbbreviation"],
+            "when": ["editorTextFocus"]
+            },
+            {
+            "before": ["<Leader>","e","%"],
+            "commands": ["editor.emmet.action.matchTag"],
+            "when": ["editorTextFocus"]
             },
             {
             "before": ["<Leader>","m"],
