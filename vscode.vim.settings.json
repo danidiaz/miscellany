@@ -53,13 +53,9 @@
             "commands": ["references-view.showCallHierarchy"]
             },
             {
-            "before": ["<Leader>","b"],
-            "commands": ["bookmarks.list"]
-            },
-            {
-            "before": ["<Leader>","B"],
-            "commands": ["bookmarks.listFromAllFiles"]
-            },    
+            "before": ["<Leader>","b", "l"],
+            "commands": ["bookmarks.toggleLabeled"]
+            },  
             {
             "before": ["<Leader>","a"],
             "commands": ["workbench.action.showCommands"]
