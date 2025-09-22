@@ -121,44 +121,8 @@ GetSecondKey() {
     }
 }
 
-; RightAlt + [ then vocal, for circumflex
+; RightAlt + [ then vocal, for umlaut
 >![::
-{
-    key := GetSecondKey()
-    if (key == "a") { 
-        Send "{U+00E2}"
-    }
-    else if (key == "A") { 
-        Send "{U+00C2}"
-    }
-    else if (key == "e") { 
-        Send "{U+00EA}"
-    }
-    else if (key == "E") { 
-        Send "{U+00CA}"
-    }
-    else if (key == "i") { 
-        Send "{U+00EE}"
-    }
-    else if (key == "I") { 
-        Send "{U+00CE}"
-    }
-    else if (key == "o") { 
-        Send "{U+00F4}"
-    }
-    else if (key == "O") { 
-        Send "{U+00D4}"
-    }
-    else if (key == "u") { 
-        Send "{U+00FB}"
-    }
-    else if (key == "U") { 
-        Send "{U+00DB}"
-    }
-}
-
-; RightAlt + ] then vocal, for umlaut
->!]::
 {
     key := GetSecondKey()
     if (key == "a") { 
@@ -190,6 +154,43 @@ GetSecondKey() {
     }
     else if (key == "U") { 
         Send "{U+00DC}"
+    }
+}
+
+
+; RightAlt + ] then vocal, for circumflex
+>!]::
+{
+    key := GetSecondKey()
+    if (key == "a") { 
+        Send "{U+00E2}"
+    }
+    else if (key == "A") { 
+        Send "{U+00C2}"
+    }
+    else if (key == "e") { 
+        Send "{U+00EA}"
+    }
+    else if (key == "E") { 
+        Send "{U+00CA}"
+    }
+    else if (key == "i") { 
+        Send "{U+00EE}"
+    }
+    else if (key == "I") { 
+        Send "{U+00CE}"
+    }
+    else if (key == "o") { 
+        Send "{U+00F4}"
+    }
+    else if (key == "O") { 
+        Send "{U+00D4}"
+    }
+    else if (key == "u") { 
+        Send "{U+00FB}"
+    }
+    else if (key == "U") { 
+        Send "{U+00DB}"
     }
 }
 
