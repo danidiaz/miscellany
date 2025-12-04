@@ -19,6 +19,7 @@
   # environment.
   home.packages = [
 
+    pkgs.git
     pkgs.tmux
 
     # archives
