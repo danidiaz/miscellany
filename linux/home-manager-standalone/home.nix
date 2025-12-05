@@ -126,10 +126,18 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
+
     # TODO add your custom bashrc here
     # bashrcExtra = ''
     #   export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     # '';
+
+    # To avoid losing access to the single-user nix installation
+    profileExtra = ''
+      if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+        . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+      fi
+    '';
 
     # # set some aliases, feel free to add more or remove some
     # shellAliases = {
