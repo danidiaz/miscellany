@@ -124,6 +124,11 @@
     # EDITOR = "emacs";
   };
 
+  programs.dircolors = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   programs.bash = {
     enable = true;
     enableCompletion = true;
@@ -140,12 +145,16 @@
     #   fi
     # '';
 
-    # # set some aliases, feel free to add more or remove some
-    # shellAliases = {
-    #   k = "kubectl";
-    #   urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
-    #   urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
-    # };
+    # set some aliases, feel free to add more or remove some
+    shellAliases = {
+      l = "ls -CF";
+      la = "ls -A";
+      ll = "ls -alF";
+      ls = "ls --color=auto";
+      # k = "kubectl";
+      # urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
+      # urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
+    };
   };
 
   # Let Home Manager install and manage itself.
