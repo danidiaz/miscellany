@@ -90,7 +90,7 @@
 
     ".config/git/config".source =  ../.gitconfig; 
     ".config/tmux/tmux.conf".source = ../.tmux.conf;
-    ".config/vim/vimrc".source = ../.vimrc;
+    ".vim/vimrc".source = ../.vimrc;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
