@@ -120,6 +120,7 @@
   #  /etc/profiles/per-user/danidiaz/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
+    PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
   };
 
