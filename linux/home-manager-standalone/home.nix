@@ -90,7 +90,6 @@
 
     ".config/git/config".source =  ../.gitconfig; 
     ".config/tmux/tmux.conf".source = ../.tmux.conf;
-    ".vim/vimrc".source = ../.vimrc;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
@@ -122,6 +121,21 @@
   home.sessionVariables = {
     PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
+  };
+
+  programs.vim = {
+    enable = true;
+    defaultEditor = true;
+    packageConfigurable = pkgs.vim;
+    extraConfig = builtins.readFile ../.vimrc;
+    plugins = [
+        # is this one really for neovim?
+        # pkgs.vimPlugins.fzf-wrapper
+        pkgs.vimPlugins.fzf-vim 
+        pkgs.vimPlugins.vim-surround
+        pkgs.vimPlugins.vim-textobj-entire
+        pkgs.vimPlugins.vim-sneak
+    ];
   };
 
   programs.dircolors = {
