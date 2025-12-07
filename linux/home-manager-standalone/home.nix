@@ -119,7 +119,9 @@
   #  /etc/profiles/per-user/danidiaz/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
+    # setting PS1 here doesn't work so well, it gets erased when launching tmux
+    # see programs.bash.sessionVariables
+    # PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
   };
 
@@ -146,6 +148,10 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
+
+    sessionVariables = {
+      PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
+    };
 
     # TODO add your custom bashrc here
     # bashrcExtra = ''
