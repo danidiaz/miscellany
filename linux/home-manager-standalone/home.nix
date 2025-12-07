@@ -28,7 +28,6 @@
     pkgs.unzip
 
     # utils
-    pkgs.ripgrep # recursively searches directories for a regex pattern
     pkgs.jq # A lightweight and flexible command-line JSON processor
 
     # networking tools
@@ -142,6 +141,14 @@
             pointer="196";
             marker="208";
         };
+  };
+
+  programs.ripgrep = {
+    enable = true;
+    arguments = [
+        "--colors=line:style:bold"
+        "--smart-case"
+    ];
   };
 
   programs.vim = {
