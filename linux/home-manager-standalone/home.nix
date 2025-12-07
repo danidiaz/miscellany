@@ -27,9 +27,6 @@
     pkgs.xz
     pkgs.unzip
 
-    # utils
-    pkgs.jq # A lightweight and flexible command-line JSON processor
-
     # networking tools
     pkgs.mtr # A network diagnostic tool
     pkgs.iperf3
@@ -121,6 +118,16 @@
     # see programs.bash.sessionVariables
     # PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
+  };
+ 
+  programs.direnv = {
+    enable = true;  
+    enableBashIntegration = true;
+    "nix-direnv".enable = true; 
+  };
+
+  programs.jq = {
+    enable = true;
   };
 
   programs.fzf = {
