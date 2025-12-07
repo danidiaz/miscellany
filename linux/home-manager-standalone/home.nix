@@ -133,20 +133,7 @@
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
-    colors = {
-      # the red scheme https://github.com/junegunn/fzf/wiki/Color-schemes#red
-      fg = "124";
-      bg = "16";
-      hl = "202";
-      "fg+" = "214";
-      "bg+" = "52";
-      "hl+" = "231";
-      info = "52";
-      prompt = "196";
-      spinner = "208";
-      pointer = "196";
-      marker = "208";
-    };
+    colors = builtins.fromJSON (builtins.readFile ./fzf-colors-red.json);
   };
 
   programs.ripgrep = {
@@ -186,7 +173,7 @@
   programs.jujutsu = {
     enable = true;
 
-    settings = import ./jujutsu-config.nix;
+    settings = builtins.fromTOML (builtins.readFile ./jujutsu-config.toml);
   };
 
   programs.tmux = {
