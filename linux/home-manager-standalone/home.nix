@@ -181,6 +181,7 @@
 
   programs.tmux = {
     enable = true;
+    # TODO: perhaps turn it into the map-like configuration style?
     extraConfig = builtins.readFile ../.tmux.conf;
   };
 
