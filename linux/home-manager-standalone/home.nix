@@ -30,7 +30,6 @@
     # utils
     pkgs.ripgrep # recursively searches directories for a regex pattern
     pkgs.jq # A lightweight and flexible command-line JSON processor
-    pkgs.fzf # A command-line fuzzy finder
 
     # networking tools
     pkgs.mtr # A network diagnostic tool
@@ -123,6 +122,26 @@
     # see programs.bash.sessionVariables
     # PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
+  };
+
+  programs.fzf = {
+    enable = true;
+    enableBashIntegration = true;
+    colors = 
+        {
+            # the red scheme https://github.com/junegunn/fzf/wiki/Color-schemes#red
+            fg="124";
+            bg="16";
+            hl="202";
+            "fg+"="214";
+            "bg+"="52";
+            "hl+"="231";
+            info="52";
+            prompt="196";
+            spinner="208";
+            pointer="196";
+            marker="208";
+        };
   };
 
   programs.vim = {
