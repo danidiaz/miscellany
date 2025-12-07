@@ -19,12 +19,17 @@
   # environment.
   home.packages = [
 
+    # scripting
+    pkgs.lua
+    pkgs.python315
+
     # archives
     pkgs.zip
     pkgs.xz
     pkgs.unzip
 
     # networking tools
+    pkgs.iproute2
     pkgs.mtr # A network diagnostic tool
     pkgs.iperf3
     pkgs.dnsutils # `dig` + `nslookup`
@@ -176,6 +181,12 @@
     enable = true;
 
     settings = import ./git-config.nix;
+  };
+
+  programs.jujutsu = {
+    enable = true;
+
+    settings = import ./jujutsu-config.nix;
   };
 
   programs.tmux = {
