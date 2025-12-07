@@ -19,7 +19,6 @@
   # environment.
   home.packages = [
 
-    pkgs.git
     pkgs.tmux
 
     # archives
@@ -83,7 +82,7 @@
   # plain files is through 'home.file'.
   home.file = {
 
-    ".config/git/config".source =  ../.gitconfig; 
+    # ".config/git/config".source =  ../.gitconfig; 
     ".config/tmux/tmux.conf".source = ../.tmux.conf;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
@@ -176,6 +175,12 @@
   programs.dircolors = {
     enable = true;
     enableBashIntegration = true;
+  };
+
+  programs.git = {
+    enable = true;
+
+    settings = import ./git-config.nix;
   };
 
   programs.bash = {
