@@ -23,15 +23,15 @@
     ca = ''commit --amend'';
     b = ''branch --show-current'';
     ba = ''branch -vv --all'';
-    bz = ''!"git branch --sort=-committerdate | grep '^[^*]' | fzf"'';
-    sz = ''!"git switch $(git bz)"'';
+    bz = ''!git branch --sort=-committerdate | grep '^[^*]' | fzf'';
+    sz = ''!git switch $(git bz)'';
     # https://stackoverflow.com/questions/29810331/is-there-a-quick-way-to-git-diff-from-the-point-or-branch-origin
-    dz = ''!"git diff $(git ls-files --modified | fzf --multi)"    '';
-    dg = ''!"git diff $(git merge-base main@{u} HEAD)"'';
-    dgn = ''!"git diff --name-only $(git merge-base main@{u} HEAD)"'';
-    dgz = ''!"git diff $(git merge-base main@{u} HEAD) -- $(git dgn | fzf)"'';
+    dz = ''!git diff $(git ls-files --modified | fzf --multi)    '';
+    dg = ''!git diff $(git merge-base main@{u} HEAD)'';
+    dgn = ''!git diff --name-only $(git merge-base main@{u} HEAD)'';
+    dgz = ''!git diff $(git merge-base main@{u} HEAD) -- $(git dgn | fzf)'';
     ds = ''diff --staged'';
-    dsz = ''!"git diff --staged $(git ls-files --modified | fzf --multi)"'';
+    dsz = ''!git diff --staged $(git ls-files --modified | fzf --multi)'';
     l = ''log --graph --oneline --decorate'';
     la = ''log --graph --oneline --decorate --all'';
     # This for following renames to a single file.
@@ -41,17 +41,17 @@
     s = ''status -s -b'';
     st = ''status -s -b --untracked-files=no'';
     at = ''add --update'';
-    atz = ''!"git add -- $(git ls-files --modified | fzf --multi)"'';
-    atp = ''!"git add --patch -- $(git ls-files --modified | fzf --multi)"'';
-    az = ''!"git add -- $(git ls-files --others | fzf --multi)"'';
+    atz = ''!git add -- $(git ls-files --modified | fzf --multi)'';
+    atp = ''!git add --patch -- $(git ls-files --modified | fzf --multi)'';
+    az = ''!git add -- $(git ls-files --others | fzf --multi)'';
     u = ''diff --name-only --diff-filter=U'';
     m = ''merge-base origin/main HEAD'';
     mt = ''mergetool'';
     dt = ''difftool'';
-    rz = ''!"git restore -- $(git ls-files -m | fzf --multi)"'';
-    rp = ''!"git restore --patch -- $(git ls-files -m | fzf --multi)"'';
-    rsz = ''!"git restore --staged -- $(git diff --name-only --staged | fzf --multi)"'';
-    eg = ''!"git rebase --interactive $(git merge-base main@{u} HEAD)"'';
+    rz = ''!git restore -- $(git ls-files -m | fzf --multi)'';
+    rp = ''!git restore --patch -- $(git ls-files -m | fzf --multi)'';
+    rsz = ''!git restore --staged -- $(git diff --name-only --staged | fzf --multi)'';
+    eg = ''!git rebase --interactive $(git merge-base main@{u} HEAD)'';
     fm = ''fetch origin main'';
     em = ''rebase main@{u}'';
   };
