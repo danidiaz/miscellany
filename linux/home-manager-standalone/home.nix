@@ -27,10 +27,10 @@
     # networking tools
     pkgs.mtr # A network diagnostic tool
     pkgs.iperf3
-    pkgs.dnsutils  # `dig` + `nslookup`
+    pkgs.dnsutils # `dig` + `nslookup`
     pkgs.socat # replacement of openbsd-netcat
     pkgs.nmap # A utility for network discovery and security auditing
-    pkgs.ipcalc  # it is a calculator for the IPv4/v6 addresses
+    pkgs.ipcalc # it is a calculator for the IPv4/v6 addresses
 
     # misc
     pkgs.cowsay
@@ -42,7 +42,7 @@
     pkgs.gawk
     pkgs.zstd
 
-    pkgs.btop  # replacement of htop/nmon
+    pkgs.btop # replacement of htop/nmon
     pkgs.iotop # io monitoring
     pkgs.iftop # network monitoring
 
@@ -114,11 +114,11 @@
     # PS1 = "\\[\\033[01;34m\\]\\W\\[\\033[00m\\]\$ ";
     # EDITOR = "emacs";
   };
- 
+
   programs.direnv = {
-    enable = true;  
+    enable = true;
     enableBashIntegration = true;
-    "nix-direnv".enable = true; 
+    "nix-direnv".enable = true;
   };
 
   programs.jq = {
@@ -128,28 +128,27 @@
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
-    colors = 
-        {
-            # the red scheme https://github.com/junegunn/fzf/wiki/Color-schemes#red
-            fg="124";
-            bg="16";
-            hl="202";
-            "fg+"="214";
-            "bg+"="52";
-            "hl+"="231";
-            info="52";
-            prompt="196";
-            spinner="208";
-            pointer="196";
-            marker="208";
-        };
+    colors = {
+      # the red scheme https://github.com/junegunn/fzf/wiki/Color-schemes#red
+      fg = "124";
+      bg = "16";
+      hl = "202";
+      "fg+" = "214";
+      "bg+" = "52";
+      "hl+" = "231";
+      info = "52";
+      prompt = "196";
+      spinner = "208";
+      pointer = "196";
+      marker = "208";
+    };
   };
 
   programs.ripgrep = {
     enable = true;
     arguments = [
-        "--colors=line:style:bold"
-        "--smart-case"
+      "--colors=line:style:bold"
+      "--smart-case"
     ];
   };
 
@@ -159,12 +158,12 @@
     packageConfigurable = pkgs.vim;
     extraConfig = builtins.readFile ../.vimrc;
     plugins = [
-        # is this one really for neovim?
-        # pkgs.vimPlugins.fzf-wrapper
-        pkgs.vimPlugins.fzf-vim 
-        pkgs.vimPlugins.vim-surround
-        pkgs.vimPlugins.vim-textobj-entire
-        pkgs.vimPlugins.vim-sneak
+      # is this one really for neovim?
+      # pkgs.vimPlugins.fzf-wrapper
+      pkgs.vimPlugins.fzf-vim
+      pkgs.vimPlugins.vim-surround
+      pkgs.vimPlugins.vim-textobj-entire
+      pkgs.vimPlugins.vim-sneak
     ];
   };
 
