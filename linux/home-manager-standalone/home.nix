@@ -63,6 +63,12 @@
     pkgs.pciutils # lspci
     pkgs.usbutils # lsusb
 
+    # formatters
+    pkgs.nixfmt
+    pkgs.ormolu 
+
+    pkgs.watchexec
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
