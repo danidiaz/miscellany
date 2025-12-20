@@ -103,9 +103,11 @@
     # '';
   };
 
-  # ghcup is installed separately, but we include the path here
   home.sessionPath = [
+    # ghcup is installed separately, but we include the path here
     "$HOME/.ghcup/bin/"
+    # ditto for Claude and other tools
+    "$HOME/.local/bin"
   ];
 
   # Home Manager can also manage your environment variables through
