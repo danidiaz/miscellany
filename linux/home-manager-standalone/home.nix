@@ -19,9 +19,12 @@
   # environment.
   home.packages = [
 
-    # scripting
+    # programming
     pkgs.lua
     pkgs.python315
+    # TODO: in versions of home-manager > 25.11, npm might 
+    # be installable from 'programs'
+    pkgs.nodejs_24
 
     # archives
     pkgs.zip
