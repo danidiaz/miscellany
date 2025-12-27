@@ -80,7 +80,7 @@ GetSecondKey() {
     else if (key == "'") {  
         Send "{U+0060}"  ; backtick (for keyboards missing the upper left corner key)
     }
-    else if (key == "z") {  
+    else if (key == "q") {  
         Send "{U+007E}"  ; virgulilla (for keyboards missing the upper left corner key)
     }
     else if (key == "-") { 
