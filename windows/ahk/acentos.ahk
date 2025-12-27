@@ -74,6 +74,15 @@ GetSecondKey() {
     else if (key == "?") {  
         Send "{U+00BF}"  ; inverted question mark 
     }
+    else if (key == "!") {  
+        Send "{U+00A1}"  ; inverted exclamation mark 
+    }
+    else if (key == "'") {  
+        Send "{U+0060}"  ; backtick (for keyboards missing the upper left corner key)
+    }
+    else if (key == "z") {  
+        Send "{U+007E}"  ; virgulilla (for keyboards missing the upper left corner key)
+    }
     else if (key == "-") { 
         Send "{U+2014}" ; em dash
     }
