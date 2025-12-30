@@ -109,6 +109,8 @@
   home.sessionPath = [
     # ghcup is installed separately, but we include the path here
     "$HOME/.ghcup/bin/"
+    # for things installed by cabal
+    "$HOME/.cabal/bin/"
     # ditto for Claude and other tools
     "$HOME/.local/bin"
   ];
