@@ -32,7 +32,7 @@
 {
     locator := "ahk_exe gvim.exe"
     if not WinExist(locator) {
-        Run('"C:\Program Files (x86)\Vim\vim90\gvim.exe"')
+        Run('"C:\Program Files (x86)\Vim\vim92\gvim.exe"')
     } else {
         WinActivate(locator)
     }
