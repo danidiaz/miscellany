@@ -184,6 +184,7 @@ ab :flushed: 😳
 ab :astonished: 😲
 ab :exploding: 🤯
 ab :cyclone: 🌀
+ab :eyes: 👀
 
 if &term =~ "xterm\\|rxvt"
   " https://stackoverflow.com/a/25327689
