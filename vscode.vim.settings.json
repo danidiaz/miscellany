@@ -148,7 +148,11 @@
             {
             "before": ["<Leader>","g","w"],
             "commands": ["gitlens.compareWorkingWith"]
-            },        
+            },
+            {
+            "before": ["<Leader>","g","r"],
+            "commands": ["gitlens.compareWith"]
+            },
             {
             "before": ["<Leader>","g","p"],
             "commands": ["gitlens.gitCommands"]
