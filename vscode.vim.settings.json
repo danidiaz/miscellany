@@ -173,6 +173,16 @@
             "before": ["<Leader>","g", "u"],
             "commands": ["gitlens.copyRemoteFileUrlToClipboard"]
             },
+            {
+            "before": ["<Leader>","z"],
+            "commands": ["editor.action.accessibleDiffViewer.next"],
+            "when" : ["editorTextFocus && isInDiffEditor"]
+            },    
+            {
+            "before": ["<Leader>","Z"],
+            "commands": ["editor.action.accessibleDiffViewer.prev"],
+            "when" : ["editorTextFocus && isInDiffEditor"]
+            },  
     ],
     "vim.leader": ",",
     "editor.fontSize": 18,
