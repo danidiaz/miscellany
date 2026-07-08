@@ -150,6 +150,10 @@
             "commands": ["gitlens.compareWorkingWith"]
             },
             {
+            "before": ["<Leader>","g","e"],
+            "commands": ["gitlens.compareHeadWith"]
+            },
+            {
             "before": ["<Leader>","g","r"],
             "commands": ["gitlens.compareWith"]
             },
